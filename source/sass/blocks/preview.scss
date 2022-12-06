@@ -1,0 +1,12 @@
+.preview {
+  margin: 0 auto;
+  background-color: $basic-grey;
+  width: 420px;
+  min-height: 399px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.preview__info {
+  @include main-text;
+}

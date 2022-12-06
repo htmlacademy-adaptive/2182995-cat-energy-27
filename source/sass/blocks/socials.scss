@@ -1,0 +1,14 @@
+.socials {
+  @include center;
+  width: 480px;
+  background-color: rgb(217, 217, 217);
+}
+
+.socials__logo {
+  @include center;
+}
+
+.socials__list {
+  list-style: none;
+  display: flex;
+}

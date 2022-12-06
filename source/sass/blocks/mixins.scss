@@ -1,0 +1,19 @@
+@mixin center {
+  margin: 0 auto;
+}
+
+@mixin main-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  color: $grey-main;
+}
+
+@mixin main-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 60px;
+  color: #000000;
+}

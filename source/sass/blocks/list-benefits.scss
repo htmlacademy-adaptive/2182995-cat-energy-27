@@ -1,0 +1,54 @@
+$description-text: rgb(68, 68, 68);
+
+.list-benefits {
+  list-style: none;
+}
+
+.list-benefits__item-description {
+  @include main-text;
+  position: relative;
+}
+
+.list-benefits__item--nature::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background: url("../img/nature_icon.svg");
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: unset;
+  position: absolute;
+}
+
+.list-benefits__item--meal::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background: url("../img/meel_icon.svg");
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: unset;
+  position: absolute;
+}
+
+.list-benefits__item--tool::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background: url("../img/tool_icon.svg");
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: unset;
+  position: absolute;
+}
+
+.list-benefits__item--time::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background: url("../img/time_icon.svg");
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: unset;
+  position: absolute;
+}

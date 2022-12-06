@@ -1,0 +1,16 @@
+.additional-item--name {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.additional-item--mass,
+.additional-item--price {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $grey-main;
+}

@@ -1,0 +1,30 @@
+.stat__wrapper {
+  margin: 0 auto;
+  width: 186px;
+  min-height: 105px;
+}
+
+.stat__cat-result {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.stat__title {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: $grey-main;
+}
+
+.stat__total-price {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #000000;
+
+  @include center;
+}

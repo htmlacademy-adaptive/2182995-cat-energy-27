@@ -1,0 +1,16 @@
+.case {
+  @include center;
+  width: 420px;
+}
+
+.case__title {
+  @include main-title;
+}
+
+.case__description {
+  @include main-text;
+}
+
+.case__stat {
+  @include center;
+}
