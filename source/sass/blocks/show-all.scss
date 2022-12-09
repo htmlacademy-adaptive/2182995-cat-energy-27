@@ -2,13 +2,15 @@
   margin: 0 auto;
   width: 279px;
 }
+
 .show-all {
   width: 320px;
+
   @include center;
 }
 
 .show-all__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

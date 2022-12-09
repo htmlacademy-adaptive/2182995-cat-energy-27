@@ -3,11 +3,12 @@
   color: #ffffff;
   width: 280px;
   min-height: 40px;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
   border: none;
   text-align: center;
 }
@@ -17,7 +18,7 @@
   color: $grey-main;
   width: 280px;
   min-height: 40px;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

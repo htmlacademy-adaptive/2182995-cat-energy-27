@@ -3,17 +3,17 @@
 }
 
 @mixin main-text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 18px;
   color: $grey-main;
 }
 
 @mixin main-title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
-  font-size: 54px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 34px;
   color: #000000;
 }

@@ -1,9 +1,9 @@
 .page__body-index {
-  width: 480px;
+  width: 320px;
 
   @include main-text;
   background-color: rgb (255, 255, 255);
-  margin: 0;
+  margin: 0 auto;
 }
 
 .page__body {
@@ -11,5 +11,5 @@
 
   @include main-text;
   background-color: rgb (255, 255, 255);
-  margin: 0;
+  margin: 0 auto;
 }

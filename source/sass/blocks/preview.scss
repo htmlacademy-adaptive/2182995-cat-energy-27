@@ -1,7 +1,7 @@
 .preview {
   margin: 0 auto;
   background-color: $basic-grey;
-  width: 420px;
+  width: 320px;
   min-height: 399px;
   box-sizing: border-box;
   padding: 30px;
@@ -9,4 +9,17 @@
 
 .preview__info {
   @include main-text;
+}
+
+.preview__title {
+  @include main-title;
+}
+
+.preview__link {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
 }

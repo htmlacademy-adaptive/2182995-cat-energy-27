@@ -1,8 +1,8 @@
 .promo {
   background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
   background-position: top;
-  background-size: 480px 453px;
-  width: 480px;
+  background-size: 320px 302px;
+  width: 320px;
   min-height: 720px;
   background-repeat: no-repeat, no-repeat;
   margin: 0 auto;
@@ -13,26 +13,26 @@
 .promo::after {
   content: "";
   position: absolute;
-  width: 420px;
-  height: 405px;
+  width: 280px;
+  height: 270px;
   background-image: url("../img/cat-energy-index.png");
-  background-size: 420px 405px;
-  top: 250px;
+  background-size: 280px 270px;
+  top: 167px;
   right: 30px;
 }
 
 .promo__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
-  font-size: 54px;
-  line-height: 54px;
+  font-size: 36px;
+  line-height: 36px;
   color: #ffffff;
 }
 
 .promo__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 14px;
   color: #ffffff;
 }

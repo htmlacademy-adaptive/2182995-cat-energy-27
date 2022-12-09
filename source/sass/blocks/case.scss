@@ -1,10 +1,14 @@
 .case {
   @include center;
-  width: 420px;
+  width: 320px;
 }
 
 .case__title {
-  @include main-title;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
 }
 
 .case__description {
