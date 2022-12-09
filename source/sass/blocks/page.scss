@@ -1,0 +1,15 @@
+.page__body-index {
+  width: 320px;
+
+  @include main-text;
+  background-color: rgb (255, 255, 255);
+  margin: 0 auto;
+}
+
+.page__body {
+  width: 320px;
+
+  @include main-text;
+  background-color: rgb (255, 255, 255);
+  margin: 0 auto;
+}

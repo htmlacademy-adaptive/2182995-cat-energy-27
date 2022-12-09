@@ -1,0 +1,27 @@
+.form-additional-info {
+  width: 280px;
+  padding: 0;
+  border: none;
+}
+
+.form-additional-info__title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-additional-info__input {
+  width: 280px;
+  min-height: 150px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-main;
+  border: 1px solid rgb(231, 231, 231);
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.main-products__name {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.main-products__image-link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.main-products__details {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-main;
+  display: grid;
+}

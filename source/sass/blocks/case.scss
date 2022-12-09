@@ -1,0 +1,20 @@
+.case {
+  @include center;
+  width: 320px;
+}
+
+.case__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.case__description {
+  @include main-text;
+}
+
+.case__stat {
+  @include center;
+}

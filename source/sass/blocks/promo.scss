@@ -1,0 +1,38 @@
+.promo {
+  background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
+  background-position: top;
+  background-size: 320px 302px;
+  width: 320px;
+  min-height: 720px;
+  background-repeat: no-repeat, no-repeat;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  background-image: url("../img/cat-energy-index.png");
+  background-size: 280px 270px;
+  top: 167px;
+  right: 30px;
+}
+
+.promo__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.promo__slogan {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}

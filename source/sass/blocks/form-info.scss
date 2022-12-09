@@ -1,0 +1,51 @@
+.form-info__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-info {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.form-info__item {
+  display: flex;
+  gap: 13px;
+}
+
+.form-info__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-main;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form-info__title--owner {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $grey-main;
+  margin: 0;
+}
+
+.form-info__input {
+  min-width: 173px;
+  min-height: 45px;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 0;
+  flex-grow: 1;
+  color: $grey-main;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 20px;
+  padding-top: 14px;
+}

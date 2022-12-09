@@ -1,0 +1,20 @@
+.form-radio {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-radio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-radio__label {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}

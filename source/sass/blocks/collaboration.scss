@@ -1,0 +1,19 @@
+.collaboration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.collaboration__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.collaboration__address {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
