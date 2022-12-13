@@ -1,7 +1,10 @@
 .stat__wrapper {
   margin: 0 auto;
-  width: 186px;
-  min-height: 105px;
+  min-width: 124px;
+  min-height: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .stat__cat-result {
@@ -9,6 +12,9 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
+  color:#000000;
 }
 
 .stat__title {
@@ -17,6 +23,10 @@
   font-size: 12px;
   line-height: 12px;
   color: $grey-main;
+  text-align: center;
+  margin: 0;
+  max-width: 77px;
+  padding-left: 22px;
 }
 
 .stat__total-price {
@@ -27,4 +37,9 @@
   color: #000000;
 
   @include center;
+}
+
+.stat__wrapper::before {
+  content: url("../img/weight-stat.svg");
+  position: absolute;
 }

@@ -2,5 +2,45 @@
   @include center;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
+}
+.footer__map {
+  width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+  width: 100%;
+  padding: 0 30px;
+  }
+
+  .footer__map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+  width: 100%;
+  padding: 0 55px;
+  position: relative
+ }
+
+  .footer__map {
+  width: 100%;
+  height: 400px;
+  }
+
+  .footer__collaboration {
+    width: 565px;
+    height: 198px;
+    position: absolute;
+    background-color: #ffffff;
+    gap: 87px;
+    padding: 56px 80px;
+    top: 95px;
+  }
+
 }

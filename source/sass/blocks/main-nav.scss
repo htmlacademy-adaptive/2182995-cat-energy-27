@@ -10,3 +10,20 @@
 
   @include center;
 }
+
+@media (min-width: $tablet-width) {
+ .main-nav {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  min-width: 440px;
+  padding: 0;
+
+}
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 0;
+  }
+}

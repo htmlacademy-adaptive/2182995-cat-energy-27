@@ -1,4 +1,4 @@
-.page__body-index {
+.page__body {
   width: 320px;
 
   @include main-text;
@@ -6,10 +6,22 @@
   margin: 0 auto;
 }
 
-.page__body {
-  width: 320px;
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 768px;
 
-  @include main-text;
-  background-color: rgb (255, 255, 255);
-  margin: 0 auto;
+    @include main-text;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1330px;
+
+    @include main-text;
+    margin: 0 auto;
+  }
+
 }

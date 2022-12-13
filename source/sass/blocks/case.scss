@@ -1,6 +1,8 @@
 .case {
   @include center;
-  width: 320px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .case__title {
@@ -17,4 +19,89 @@
 
 .case__stat {
   @include center;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .case {
+  width: 100%;
+  @include center;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+  .case__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+}
+
+  .case__description {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey-main;
+}
+
+  .case__stat {
+  display: flex;
+}
+
+.case__slider {
+  margin: 0 auto;
+}
+
+.case__slider--img {
+  width: 560px;
+  height: 512px;
+  margin: 0 auto;
+}
+}
+
+@media (min-width: $desktop-width) {
+  .case__example {
+  max-width: 440px;
+  @include center;
+
+}
+  .case {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .case__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+}
+
+  .case__description {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey-main;
+}
+
+  .case__stat {
+  display: flex;
+}
+
+.case__slider {
+  margin: 0 auto;
+}
+
+.case__slider--img {
+  width: 560px;
+  height: 512px;
+  margin: 0 auto;
+}
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,15 +11,13 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="../source/img/logo.svg" width="50" height="56" alt="Кэт энерджи"></a>
-    <a class="main-header__caption" href="index.html">
-      <img class="main-header__caption-image" src="../source/img/caption.svg" width="151" height="27"
-        alt="Кэт энерджи"></a>
+      <img class="main-header__logo-image" src="../img/logo.svg" width="33" height="37" alt="Кэт энерджи">
+      <img class="main-header__logo-image" src="../img/caption.svg" width="101" height="18" alt="Кэт энерджи"></a>
     <nav class="main-nav">
       <button class="main-header__toggle" type="button">
         <span class="visually hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
             <a href="index.html">
@@ -36,7 +35,7 @@
             </a>
           </li>
         </ul>
-      </div>
+
     </nav>
   </header>
   <main class="main-catalog">
@@ -169,17 +168,18 @@
             <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
           </form>
         </li>
+        <li class="product-list__item main-products">
+          <div class="show-all__wrapper">
+            <h2 class="show-all__title">Показать еще 100500 товаров</h2>
+            <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
+            <form action="list-products.html" target="_blank">
+              <button class="show-all__button button-secondary--grey" type="button">Показать все</button>
+            </form>
+          </div>
+
+        </li>
       </ul>
-      <section class="show-all">
-        <div class="show-all__wrapper">
-          <h2 class="show-all__title">Показать еще 100500 товаров</h2>
-          <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
-          <form action="list-products.html" target="_blank">
-            <button class="show-all__button button-secondary--grey" type="button">Показать все</button>
-          </form>
-        </div>
-      </section>
-    </div>
+
     <section class="main-catalog__additional additional-products">
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
@@ -218,23 +218,23 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="catalog-gift">
-      <div class="catalog-gift__wrapper">
-        <p class="catalog-gift__slogan">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+      <div class="additional-products__gift">
+          <p class="additional-products__gift--slogan">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
       </div>
     </section>
+
   </main>
   <footer class="footer">
-    <section class="collaboration">
-      <h1 class="visually-hidden">Сотрудничество</h1>
+    <section class="footer__collaboration collaboration">
+      <h2 class="visually-hidden">Сотрудничество</h2>
       <span class="collaboration__title">ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!</span>
-      <address class="adress">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619335193877!2d30.32197451414531!3d59.93845850496381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669480901189!5m2!1sru!2sru"
-        width="480" height="543" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <address class="collaboration__address">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
     </section>
+      <iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619335193877!2d30.32197451414531!3d59.93845850496381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669480901189!5m2!1sru!2sru"
+        width="480" height="543" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <section class="socials">
       <a class="socials__logo" href="index.html">
         <img class="socials-logo" src="../source/img/caption.svg" width="192" height="36" alt="Кэт энерджи"></a>

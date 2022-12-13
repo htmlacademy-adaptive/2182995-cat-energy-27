@@ -2,8 +2,9 @@
   background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
   background-position: top;
   background-size: 320px 302px;
-  width: 320px;
-  min-height: 720px;
+  min-width: 280px;
+  padding: 0 20px;
+  min-height: 480px;
   background-repeat: no-repeat, no-repeat;
   margin: 0 auto;
   background-color: #ffffff;
@@ -36,3 +37,100 @@
   line-height: 14px;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+    background-color: #ffffff;
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 900px;
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    width: 609px;
+    height: 709px;
+    background-image: url("../img/cat-energy-index.png");
+    background-size: 609px 709px;
+    top: 220px;
+    right: 30px;
+  }
+
+  .promo__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding-left: 117px;
+  }
+
+  .promo__slogan {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 119px;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 220px;
+    left: 145px;
+    z-index: 10;
+}
+  }
+
+  @media (min-width: $desktop-width) {
+    .promo {
+      background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
+      background-position: right;
+      background-size: 720px 694px;
+      width: 100%;
+      padding: 0 55px;
+      min-height: 696px;
+      background-repeat: no-repeat, no-repeat;
+      margin: 0 auto;
+      background-color: #ffffff;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .promo::after {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      background-image: url("../img/cat-energy-index.png");
+      background-size: 552px 499px;
+      top: 141px;
+      right: 280px;
+    }
+
+    .promo__title {
+      font-family: $oswald;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+    }
+
+    .promo__slogan {
+      font-family: $oswald;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: #000000;
+    }
+
+    .promo__button {
+      position: absolute;
+      top: 220px;
+      left: 145px;
+      z-index: 10;
+  }
+  }

@@ -3,4 +3,36 @@
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-list__item {
+    width: 324px;
+    min-height: 511px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 55px;
+    gap: 80px;
+  }
+
+  .product-list__item {
+    width: 245px;
+    min-height: 511px;
+  }
 }

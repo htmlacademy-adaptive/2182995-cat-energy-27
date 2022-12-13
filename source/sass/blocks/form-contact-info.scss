@@ -1,22 +1,22 @@
-.form-info__list {
+.form-contact-info__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.form-info {
+.form-contact-info {
   border: none;
   padding: 0;
   margin: 0;
 
 }
 
-.form-info__item {
+.form-contact-info__item {
   display: flex;
   gap: 13px;
 }
 
-.form-info__title {
+.form-contact-info__title {
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -26,7 +26,7 @@
   text-transform: uppercase;
 }
 
-.form-info__title--owner {
+.form-contact-info__title--owner {
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
@@ -35,7 +35,7 @@
   margin: 0;
 }
 
-.form-info__input {
+.form-contact-info__input {
   min-width: 173px;
   min-height: 45px;
   border: 1px solid rgb(231, 231, 231);
@@ -51,10 +51,33 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-info {
+  .form-contact-info {
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
+
+  .form-contact-info__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-contact-info__input {
+    min-width: 467px;
+    min-height: 45px;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 0;
+    flex-grow: 1;
+    color: $grey-main;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-top: 14px;
+  }
+
+
 }

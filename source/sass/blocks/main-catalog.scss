@@ -1,6 +1,6 @@
 .main-catalog {
   @include center;
-  width: 320px;
+  width: 100%;
 }
 
 .main-catalog__title {
@@ -9,3 +9,21 @@
   font-size: 36px;
   line-height: 36px;
 }
+
+@media (min-width: $tablet-width) {
+ .main-catalog {
+  width: 100%;
+  padding: 0 30px;
+ }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+   width: 100%;
+   padding: 0 55px;
+  }
+
+  .main-catalog__wrapper {
+    margin: 0 auto;
+  }
+ }
