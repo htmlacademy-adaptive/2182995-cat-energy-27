@@ -1,12 +1,9 @@
 .features {
-  @include center;
   width: 100%;
-  padding: 0 20px;
 }
 
 .features__container {
-  width: 280px;
-  padding: 0 20px;;
+  padding: 0 20px;
 }
 
 .features__title {
@@ -24,8 +21,8 @@
 
 @media (min-width: $tablet-width) {
   .features__container {
-    width: 100%;
-    padding: 0 30px;;
+    padding: 0;
+
   }
 
   .features__list {
@@ -45,16 +42,11 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    @include center;
     width: 100%;
-    padding: 0 55px;
   }
-
-
-
     .features__container {
     width: 100%;
-    padding: 0 55px;;
+    padding: 0;;
   }
 
   .features__list {

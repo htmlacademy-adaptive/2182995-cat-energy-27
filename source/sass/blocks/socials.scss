@@ -1,7 +1,10 @@
 .socials {
-  @include center;
   width: 100%;
   background-color: rgb(217, 217, 217);
+}
+
+.socials__wrapper {
+  padding: 0 20px;
 }
 
 .socials__logo {
@@ -11,4 +14,24 @@
 .socials__list {
   list-style: none;
   display: flex;
+}
+
+
+@media (min-width: $tablet-width) {
+  .socials__wrapper {
+    padding: 0 30px;
+  }
+
+  .socials {
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .socials__wrapper {
+    padding: 0 55px;
+  }
+
 }

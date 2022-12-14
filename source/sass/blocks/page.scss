@@ -4,6 +4,13 @@
   @include main-text;
   background-color: rgb (255, 255, 255);
   margin: 0 auto;
+
+}
+
+.page__container {
+  padding: 0 20px;
+  box-sizing: border-box;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -12,6 +19,13 @@
 
     @include main-text;
     margin: 0 auto;
+
+  }
+
+  .page__container {
+    padding: 0 30px;
+    box-sizing: border-box;
+
   }
 
 }
@@ -22,6 +36,13 @@
 
     @include main-text;
     margin: 0 auto;
+
+  }
+
+  .page__container {
+    padding: 0 55px;
+    box-sizing: border-box;
+
   }
 
 }
