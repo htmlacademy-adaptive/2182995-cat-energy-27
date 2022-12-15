@@ -1,10 +1,13 @@
-.preview-content {
+.preview__container {
+  padding: 0 20px;
   background-color: $basic-grey;
   min-height: 399px;
 }
 
-.preview__container {
+.preview__wrapper {
   padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .preview__info {
@@ -25,19 +28,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .preview-content {
+   .preview__wrapper {
+    padding: 0 30px;
+    width: 768px;
     margin: 0 auto;
+  }
+    .preview__container {
+    padding: 77px 62px 53px 52px;
     background-color: $basic-grey;
     width: 708px;
     min-height: 372px;
     box-sizing: border-box;
     position: relative;
-  }
-
-  .preview__container {
-    padding: 77px 62px 53px 52px;
-    box-sizing: border-box;
-  }
+    }
 
 
   .preview__info {
@@ -65,18 +68,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .preview-content {
-    margin: 0;
-    background-color: $basic-grey;
-    width: 570px;
-    min-height: 372px;
-    box-sizing: border-box;
+  .preview__wrapper {
+    padding: 0 55px;
+    width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .preview {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  .preview__container {
+    width: 570px;
+    min-height: 372px;
   }
 
   .preview__icon {

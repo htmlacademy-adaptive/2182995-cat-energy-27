@@ -1,9 +1,8 @@
-.features {
-  width: 100%;
-}
 
-.features__container {
+.features__wrapper {
   padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .features__title {
@@ -20,8 +19,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__container {
+  .features__wrapper {
     padding: 0;
+    width: 768px;
+    margin: 0 auto;
 
   }
 
@@ -41,21 +42,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features {
-    width: 100%;
-  }
-    .features__container {
-    width: 100%;
-    padding: 0;;
-  }
+    .features__wrapper {
+    padding: 0;
+    width: 1330px;
+    margin: 0 auto;
 
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
   }
-
-  .features__title {
+    .features__title {
     font-family: $oswald;
     font-weight: 400;
     font-size: 60px;
