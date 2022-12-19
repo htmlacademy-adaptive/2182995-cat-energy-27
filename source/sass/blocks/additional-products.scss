@@ -19,7 +19,6 @@
 
 .additional-products__gift {
   @include center;
-  width: 100%;
   padding: 0 20px;
   min-height: 290px;
   background-image: url("../img/catalog-gift.jpg");
@@ -61,7 +60,6 @@
   }
 
   .additional-products__gift  {
-    width: 100%;
     min-height: 288px;
   }
 

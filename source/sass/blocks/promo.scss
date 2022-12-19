@@ -1,17 +1,24 @@
 .promo {
   background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
   background-position: top;
-  background-size: 320px 302px;
-  min-width: 280px;
-  padding: 0 20px;
-  min-height: 480px;
+  background-size: cover;
   background-repeat: no-repeat, no-repeat;
   margin: 0 auto;
   background-color: #ffffff;
   position: relative;
+  width: 100%;
+  min-height: 302px;
 }
 
-.promo::after {
+.promo__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+}
+
+.promo__button::before {
   content: "";
   position: absolute;
   width: 280px;

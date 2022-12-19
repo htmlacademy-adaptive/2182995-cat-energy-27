@@ -1,8 +1,14 @@
 .case {
-  @include center;
   width: 100%;
+  background-color: #EAEAEA;
+}
+
+.case__wrapper {
+  width: 320px;
   box-sizing: border-box;
   padding: 0 20px;
+  @include center;
+
 }
 
 .case__title {

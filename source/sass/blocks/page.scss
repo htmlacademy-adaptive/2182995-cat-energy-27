@@ -1,14 +1,11 @@
 .page__body {
   @include main-text;
   background-color: rgb (255, 255, 255);
-
-
+  margin: 0;
 }
 
 .page__container {
-  padding: 0 20px;
   box-sizing: border-box;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +16,6 @@
   }
 
   .page__container {
-    padding: 0 30px;
     box-sizing: border-box;
 
   }
@@ -35,7 +31,6 @@
   }
 
   .page__container {
-    padding: 0 55px;
     box-sizing: border-box;
 
   }

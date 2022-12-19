@@ -8,6 +8,7 @@
   padding: 0 20px;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .preview__info {
@@ -32,11 +33,11 @@
     padding: 0 30px;
     width: 768px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
     .preview__container {
     padding: 77px 62px 53px 52px;
     background-color: $basic-grey;
-    width: 708px;
     min-height: 372px;
     box-sizing: border-box;
     position: relative;
@@ -74,6 +75,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
   }
 
   .preview__container {
