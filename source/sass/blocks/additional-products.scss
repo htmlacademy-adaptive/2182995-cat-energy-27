@@ -19,7 +19,6 @@
 
 .additional-products__gift {
   @include center;
-  padding: 0 20px;
   min-height: 290px;
   background-image: url("../img/catalog-gift.jpg");
   background-size: cover;
@@ -35,11 +34,6 @@
 
 
 @media (min-width: $tablet-width) {
-  .additional-products__wrapper {
-    width: 100%;
-    padding: 0 30px;
-  }
-
   .additional-products__button {
     display: block;
     width: 632px;
@@ -61,6 +55,7 @@
 
   .additional-products__gift  {
     min-height: 288px;
+    width: 708px;
   }
 
   .additional-products {

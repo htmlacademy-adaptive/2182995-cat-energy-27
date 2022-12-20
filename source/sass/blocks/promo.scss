@@ -1,13 +1,24 @@
 .promo {
-  background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat, no-repeat;
-  margin: 0 auto;
-  background-color: #ffffff;
   position: relative;
   width: 100%;
-  min-height: 302px;
+  min-height: 480px;
+  position: relative;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
+  background-position: top;
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
+  width: 320px;
+  height: 302px;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+
 }
 
 .promo__wrapper {
@@ -16,17 +27,6 @@
   box-sizing: border-box;
   margin: 0 auto;
 
-}
-
-.promo__button::before {
-  content: "";
-  position: absolute;
-  width: 280px;
-  height: 270px;
-  background-image: url("../img/cat-energy-index.png");
-  background-size: 280px 270px;
-  top: 167px;
-  right: 30px;
 }
 
 .promo__title {
@@ -48,22 +48,32 @@
 @media (min-width: $tablet-width) {
   .promo {
     background-image: none;
-    background-color: #ffffff;
-    padding: 0 30px;
-    margin: 0 auto;
-    position: relative;
     min-height: 900px;
   }
 
-  .promo::after {
+  .promo::before {
     content: "";
     position: absolute;
-    width: 609px;
-    height: 709px;
-    background-image: url("../img/cat-energy-index.png");
-    background-size: 609px 709px;
-    top: 220px;
-    right: 30px;
+    background-image: none;
+    width: 768px;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .promo__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: relative;
+
+  }
+
+  .promo__image {
+    width: 709px;
+    height: 609px;
+    margin-top: 20px;
   }
 
   .promo__title {
@@ -72,7 +82,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    padding-left: 117px;
+    padding-left: 90px;
   }
 
   .promo__slogan {
@@ -81,42 +91,46 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    padding-left: 119px;
+    padding-left: 90px;
   }
 
   .promo__button {
     position: absolute;
-    top: 220px;
-    left: 145px;
     z-index: 10;
+    left: 120px;
+    top: 230px;
+    width: 244px;
+    height: 54px;
+
 }
   }
 
   @media (min-width: $desktop-width) {
     .promo {
-      background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
-      background-position: right;
-      background-size: 720px 694px;
       width: 100%;
-      padding: 0 55px;
       min-height: 696px;
       background-repeat: no-repeat, no-repeat;
       margin: 0 auto;
-      background-color: #ffffff;
-      position: relative;
-      box-sizing: border-box;
+
     }
 
-    .promo::after {
-      content: "";
-      position: absolute;
+
+    .promo__wrapper {
+      width: 1330px;
+      padding: 0 55px;
+      box-sizing: border-box;
+      position: relative;
+
+    }
+
+    .promo__image {
       width: 552px;
       height: 499px;
-      background-image: url("../img/cat-energy-index.png");
-      background-size: 552px 499px;
-      top: 141px;
-      right: 280px;
+      position: absolute;
+      top: -93px;
+      right: 253px;
     }
+
 
     .promo__title {
       font-family: $oswald;

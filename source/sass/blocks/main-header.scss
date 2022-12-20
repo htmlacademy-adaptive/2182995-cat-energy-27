@@ -38,6 +38,7 @@
   display: grid;
   grid-template-columns: 202px 2fr;
   gap: 538px;
+  min-height: 140px;
   }
   .main-header__toggle {
     position: absolute;

@@ -2,9 +2,31 @@
   @include center;
 }
 
+.main-container__submit {
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .main-container__submit {
     display: flex;
     gap: 64px;
+    width: 768px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container__submit {
+    display: flex;
+    gap: 84px;
+    width: 1330px;
+    padding: 0 55px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }
