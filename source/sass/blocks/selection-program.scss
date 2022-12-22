@@ -1,11 +1,13 @@
 .selection-program {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .selection-program__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .selection-program__title {
@@ -22,4 +24,39 @@
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+}
+
+@media (min-width:$tablet-width) {
+  .selection-program {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .selection-program__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .selection-program {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .selection-program__wrapper {
+    width: 1330px;
+    padding: 0 55px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .selection-program__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+
 }

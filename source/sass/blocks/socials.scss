@@ -1,7 +1,13 @@
 .socials {
-  @include center;
-  width: 320px;
+  width: 100%;
   background-color: rgb(217, 217, 217);
+}
+
+.socials__wrapper {
+  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .socials__logo {
@@ -11,4 +17,30 @@
 .socials__list {
   list-style: none;
   display: flex;
+}
+
+
+@media (min-width: $tablet-width) {
+  .socials__wrapper {
+    padding: 0 30px;
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .socials {
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .socials__wrapper {
+    padding: 0 55px;
+    width: 1330px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
 }

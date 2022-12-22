@@ -1,6 +1,12 @@
 .main-catalog {
-  @include center;
+  width: 100%;
+}
+
+.main-catalog__wrapper {
   width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @include center;
 }
 
 .main-catalog__title {
@@ -9,3 +15,31 @@
   font-size: 36px;
   line-height: 36px;
 }
+
+@media (min-width: $tablet-width) {
+ .main-catalog {
+  width: 100%;
+ }
+
+
+.main-catalog__wrapper {
+  width: 768px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  @include center;
+}
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+   width: 100%;
+  }
+
+  .main-catalog__wrapper {
+    width: 1330px;
+    padding: 0 55px;
+    box-sizing: border-box;
+    @include center;
+  }
+ }

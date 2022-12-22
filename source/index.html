@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body-index">
+<body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="../source/img/logo.svg" width="50" height="56" alt="Кэт энерджи">
-      <img class="main-header__logo-image" src="../source/img/caption.svg" width="101" height="18" alt="Кэт энерджи"></a>
+      <img class="main-header__logo-image" src="../img/logo.svg" width="33" height="37" alt="Кэт энерджи">
+      <img class="main-header__logo-image" src="../img/caption.svg" width="101" height="18" alt="Кэт энерджи"></a>
     <nav class="main-nav">
       <button class="main-header__toggle" type="button">
         <span class="visually hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
             <a href="index.html">
@@ -34,19 +36,22 @@
             </a>
           </li>
         </ul>
-      </div>
+
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Функциональное питание для котов</h1>
+    <h1 class="visually-hidden">Функциональное <br> питание для котов</h1>
     <section class="promo">
-      <h2 class="promo__title">Функциональное питание для котов</h2>
+      <div class="promo__wrapper">
+      <h2 class="promo__title">Функциональное <br> питание для котов</h2>
       <span class="promo__slogan">Занялся собой? Займись котом!</span>
-      <a href="form.html">
-        <button  class="promo__button button-primary" type="button">Подобрать программу</button>
-      </a>
+      <img class="promo__image" src="../img/cat-energy-index.png" width="280" height="270" alt="Корм">
+      <a class="promo__button button-primary" href="form.html">Подобрать программу</a>
+    </div>
     </section>
     <section class="preview">
+      <div class="preview__wrapper">
+      <div class="preview__container">
       <svg class="preview__icon" aria-hidden="true" focusable="false" width="75" height="80" viewBox="0 0 75 80"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="37.5" cy="42.25" r="37.5" fill="#68B738" />
@@ -65,8 +70,9 @@
       <p class="preview__info">Ваш кот весит больше собаки и <br> почти утратил способность лазить<br> по деревьям? Пора
         на диету! Cat<br> Energy Slim поможет вашему <br> питомцу сбросить лишний вес.</p>
       <a class="preview__link" href="catalog.html">Каталог SLIM</a>
-    </section>
-    <section class="preview">
+    </div>
+
+      <div class="preview__container">
       <svg class="preview__icon" aria-hidden="true" focusable="false" width="101" height="76" viewBox="0 0 101 76"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="51.5" cy="38.25" r="37.5" fill="#68B738" />
@@ -85,8 +91,12 @@
       <p class="preview__info">Заработать авторитет среди <br> дворовых котов и даже собак? <br> Серия Cat Energy Pro
         поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
       <a class="preview__link" href="catalog.html">Каталог PRO</a>
-    </section>
+
+    </div>
+  </div>
+  </section>
     <section class="features">
+      <div class="features__wrapper">
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list list-benefits">
         <li class="list-benefits__item  list-benefits__item--nature">
@@ -106,12 +116,16 @@
             питомца!</p>
         </li>
       </ul>
+    </div>
     </section>
     <section class="case">
+      <div class="case__wrapper">
       <h2 class="case__title">Живой пример</h2>
-      <p class="case__description"> Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой обычный корм на Cat
-        Energy<br> Slim. Отличный результат без изнуряющих<br> тренировок! При этом он не менял своих<br> привычек и
-        по-прежнему спит по 16 часов<br> в день.</p>
+
+    <div class="case__example">
+      <p class="case__description"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+        Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+        по-прежнему спит по 16 часов в день.</p>
       <div class="case__stat stat">
         <div class="stat__wrapper">
           <h2 class="stat__title">Снижение веса</h2>
@@ -123,22 +137,28 @@
         </div>
         <span class="stat__total-price">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</span>
       </div>
-      <div class="slider-cat">
-        <img src="../img/cat_slider.jpg" width="280" height="256" alt="слайдер-кот">
+    </div>
+      <div class="case__slider slider-cat">
+        <img class ="case__slider--img" src="../img/cat_slider.jpg" width="280" height="256" alt="слайдер-кот">
       </div>
+    </div>
     </section>
   </main>
+</div>
   <footer class="footer">
-    <section class="collaboration">
+    <section class="footer__collaboration collaboration collaboration--index">
+      <div class="collaboration__wrapper">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <span class="collaboration__title">ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!</span>
       <address class="collaboration__address">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
-      <iframe
+    </div>
+    </section>
+      <iframe class="footer__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619335193877!2d30.32197451414531!3d59.93845850496381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669480901189!5m2!1sru!2sru"
         width="480" height="543" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
     <section class="socials">
+      <div class="socials__wrapper">
       <a class="socials__logo" href="index.html">
         <img class="socials-logo" src="../source/img/caption.svg" width="192" height="36" alt="Кэт энерджи"></a>
       <ul class="socials__list">
@@ -181,6 +201,7 @@
         </a>
         <img class="copyright__logo" src="../source/img/logo_htmlacademy.svg" alt="логотип академии">
       </div>
+    </div>
     </section>
   </footer>
 </body>

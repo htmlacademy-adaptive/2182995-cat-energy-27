@@ -1,5 +1,5 @@
 .form-additional-info {
-  width: 280px;
+  width: 100%;
   padding: 0;
   border: none;
 }
@@ -14,7 +14,7 @@
 }
 
 .form-additional-info__input {
-  width: 280px;
+  width: 100%;
   min-height: 150px;
   font-family: $oswald;
   font-weight: 400;
@@ -25,3 +25,13 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: $desktop-width) {
+  .form-additional-info {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+

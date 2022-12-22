@@ -25,3 +25,25 @@
   line-height: 18px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+
+  .form-checkbox__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .form-checkbox__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
