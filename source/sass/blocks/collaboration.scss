@@ -5,6 +5,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0 auto;
+}
+
+.collaboration {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+
+.collaboration--index {
+  background-color: #ffffff;
+  width: 100%;
 }
 
 .collaboration__title {
@@ -23,6 +34,8 @@
 }
 
 @media (min-width: $tablet-width) {
+
+
   .collaboration__wrapper {
     width: 768px;
     padding: 56px 30px;

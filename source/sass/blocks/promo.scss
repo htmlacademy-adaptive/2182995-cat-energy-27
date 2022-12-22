@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   min-height: 480px;
-  position: relative;
 }
 
 .promo::before {
@@ -12,7 +11,7 @@
   background-position: top;
   background-size: cover, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 320px;
+  width: 100%;
   height: 302px;
   z-index: -1;
   right: 0;
@@ -47,7 +46,6 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    background-image: none;
     min-height: 900px;
   }
 
@@ -60,6 +58,7 @@
     right: 0;
     left: 0;
     margin: 0 auto;
+    display: none;
   }
 
   .promo__wrapper {
@@ -67,13 +66,18 @@
     padding: 0 30px;
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
   }
 
   .promo__image {
     width: 709px;
     height: 609px;
-    margin-top: 20px;
+    margin-top: -80px;
+    order: 4;
+    z-index: -1;
+
   }
 
   .promo__title {
@@ -95,12 +99,17 @@
   }
 
   .promo__button {
-    position: absolute;
     z-index: 10;
-    left: 120px;
-    top: 230px;
     width: 244px;
     height: 54px;
+    order: 3;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 14px 26px;
+    margin-left: 90px;
+    margin-top: 49px;
 
 }
   }
@@ -111,6 +120,24 @@
       min-height: 696px;
       background-repeat: no-repeat, no-repeat;
       margin: 0 auto;
+      position: inherit;
+
+    }
+
+    .promo::before {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/index-desktop.jpg");
+      background-position: top;
+      background-size: cover, contain;
+      background-repeat: no-repeat, no-repeat;
+      width: 720px;
+      height: 694px;
+      z-index: -1;
+      top: 0;
+      margin: 0;
+      left: 50%;
+      display: block;
 
     }
 

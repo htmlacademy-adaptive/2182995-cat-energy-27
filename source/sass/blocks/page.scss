@@ -35,17 +35,5 @@
 
   }
 
-  .page__container::before {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat;
-    width: 720px;
-    height: 694px;
-    z-index: -1;
-    right: 0;
-  }
 
 }
