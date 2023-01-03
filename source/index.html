@@ -12,11 +12,12 @@
   <div class="page__container">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="../img/logo.svg" width="33" height="37" alt="Кэт энерджи">
+      <img class="main-header__logo-image" src="../img/logo.svg" width="33" height="37" alt="Кэт энерджи"></a>
+      <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="../img/caption.svg" width="101" height="18" alt="Кэт энерджи"></a>
-    <nav class="main-nav">
-      <button class="main-header__toggle" type="button">
-        <span class="visually hidden">Открыть меню</span>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-header__toggle main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
 
         <ul class="main-nav__list site-list">
@@ -45,14 +46,14 @@
       <div class="promo__wrapper">
       <h2 class="promo__title">Функциональное <br> питание для котов</h2>
       <span class="promo__slogan">Занялся собой? Займись котом!</span>
-      <img class="promo__image" src="../img/cat-energy-index.png" width="280" height="270" alt="Корм">
+      <img class="promo__image" src="../img/promo-tablet.png" width="280" height="270" alt="Корм">
       <a class="promo__button button-primary" href="form.html">Подобрать программу</a>
     </div>
     </section>
     <section class="preview">
       <div class="preview__wrapper">
       <div class="preview__container">
-      <svg class="preview__icon" aria-hidden="true" focusable="false" width="75" height="80" viewBox="0 0 75 80"
+      <svg class="preview__icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 75 80"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="37.5" cy="42.25" r="37.5" fill="#68B738" />
         <g clip-path="url(#clip0_94_6)">
@@ -66,14 +67,19 @@
           </clipPath>
         </defs>
       </svg>
-      <h2 class="preview__title">Набор массы</h2>
+      <h2 class="preview__title">Похудение</h2>
       <p class="preview__info">Ваш кот весит больше собаки и <br> почти утратил способность лазить<br> по деревьям? Пора
         на диету! Cat<br> Energy Slim поможет вашему <br> питомцу сбросить лишний вес.</p>
-      <a class="preview__link" href="catalog.html">Каталог SLIM</a>
+      <a class="preview__link" href="catalog.html">Каталог SLIM
+        <svg class="preview__arrow" aria-hidden="true" focusable="false" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+          <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+      </svg>
+      </a>
     </div>
 
       <div class="preview__container">
-      <svg class="preview__icon" aria-hidden="true" focusable="false" width="101" height="76" viewBox="0 0 101 76"
+      <svg class="preview__icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 101 76"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="51.5" cy="38.25" r="37.5" fill="#68B738" />
         <g clip-path="url(#clip0_95_1)">
@@ -87,10 +93,15 @@
           </clipPath>
         </defs>
       </svg>
-      <h2 class="preview__title">Похудение</h2>
+      <h2 class="preview__title">Набор массы</h2>
       <p class="preview__info">Заработать авторитет среди <br> дворовых котов и даже собак? <br> Серия Cat Energy Pro
         поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
-      <a class="preview__link" href="catalog.html">Каталог PRO</a>
+      <a class="preview__link" href="catalog.html">Каталог PRO
+        <svg class="preview__arrow" aria-hidden="true" focusable="false" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+          <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+      </svg>
+      </a>
 
     </div>
   </div>
@@ -160,7 +171,7 @@
     <section class="socials">
       <div class="socials__wrapper">
       <a class="socials__logo" href="index.html">
-        <img class="socials-logo" src="../source/img/caption.svg" width="192" height="36" alt="Кэт энерджи"></a>
+        <img class="socials-logo" src="../img/caption.svg" width="128" height="24" alt="Кэт энерджи"></a>
       <ul class="socials__list">
         <li class="socials__item">
           <a class="socials__link socials__link--vkontakte" href="#">
@@ -199,11 +210,12 @@
             </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
-        <img class="copyright__logo" src="../source/img/logo_htmlacademy.svg" alt="логотип академии">
+        <img class="copyright__logo" src="../img/logo_htmlacademy.svg" alt="логотип академии">
       </div>
     </div>
     </section>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

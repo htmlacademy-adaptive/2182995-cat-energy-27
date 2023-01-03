@@ -8,6 +8,7 @@
   box-sizing: border-box;
   padding: 0 20px;
   @include center;
+  margin-top: 49px;
 
 }
 
@@ -17,10 +18,16 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .case__description {
   @include main-text;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
 }
 
 .case__stat {
@@ -29,11 +36,13 @@
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .case {
   width: 100%;
+  background-color: #FFFFFF;
 }
 
 .case__wrapper {
@@ -61,6 +70,7 @@
 
   .case__stat {
   display: flex;
+  gap: 42px;
 }
 
 .case__slider {

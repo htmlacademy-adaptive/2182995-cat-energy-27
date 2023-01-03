@@ -43,3 +43,33 @@
   content: url("../img/weight-stat.svg");
   position: absolute;
 }
+
+@media (min-width: $tablet-width) {
+
+  .stat__total-price {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 174px;
+    text-align: end;
+    margin: 0;
+  }
+
+  .stat__wrapper {
+    margin: 0;
+}
+
+.stat__cat-result {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin: 0;
+  color: #000000;
+}
+
+.stat__wrapper::before {
+  content: url("../img/weight-stat-tablet.svg");
+}
+
+}
