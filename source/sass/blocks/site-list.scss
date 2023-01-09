@@ -1,5 +1,5 @@
 .site-list__item {
-  font-family: $oswald ;
+  font-family: $oswald;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -12,7 +12,7 @@
   border-bottom: 1px solid #e6e6e6;
   width: 320px;
   margin: 0;
-  }
+}
 
 .site-list__item a {
   text-decoration: none;
@@ -23,20 +23,35 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-  font-family: $oswald ;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #000000;
-  padding: 0;
-  border: none;
-  width: auto;
-  padding-bottom: 10px;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+    padding: 0;
+    border: none;
+    width: auto;
+    padding-bottom: 10px;
+  }
+
+
+  .site-list__item--current {
+    border-bottom: 2px solid $green;
   }
 }
 
-.site-list__item--current {
-  border-bottom: 2px solid $green;
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    color: #ffffff;
 }
 
+  .site-list__item--current {
+  border-bottom: 2px solid #ffffff;
+}
+
+  .site-list__item {
+    font-size: 20px;
+    line-height: 30px;
+}
+}

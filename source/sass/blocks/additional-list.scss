@@ -3,14 +3,18 @@
   width: 100%;
 }
 
+.additional-list__item {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
 @media (min-width: $tablet-width) {
   .additional-list__item {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-auto-rows: 45px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-auto-rows: 45px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -21,5 +25,5 @@
     padding: 5px 0 5px 0;
     border-bottom: 1px solid #dcdcdc;
     border-top: 1px solid #dcdcdc;
-    }
+  }
 }

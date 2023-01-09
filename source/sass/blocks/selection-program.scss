@@ -26,7 +26,7 @@
   color: #000000;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .selection-program {
     width: 100%;
     margin: 0 auto;
@@ -38,7 +38,6 @@
     box-sizing: border-box;
     margin: 0 auto;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -53,10 +52,10 @@
     box-sizing: border-box;
     margin: 0 auto;
   }
+
   .selection-program__form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
   }
-
 }

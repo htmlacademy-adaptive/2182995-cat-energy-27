@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  padding-bottom: 40px;
+  align-items: center;
 }
 
 .socials__htmlacademy-icon {
@@ -19,5 +19,11 @@
   .copyright {
     padding: 0;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    gap: 27px;
   }
 }

@@ -9,6 +9,7 @@
 
 .list-benefits__item {
   min-height: 60px;
+  position: relative;
 }
 
 .list-benefits__item-description {
@@ -22,51 +23,82 @@
   content: "";
   width: 60px;
   height: 60px;
-  background: url("../img/nature_icon.svg");
+  background: url("../img/green-back.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: unset;
   position: absolute;
+}
+
+.list-benefits__item--nature::after {
+  content: url(../img/icon-leaf.svg);
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .list-benefits__item--meal::before {
   content: "";
   width: 60px;
   height: 60px;
-  background: url("../img/meel_icon.svg");
+  background: url("../img/green-back.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: unset;
   position: absolute;
+}
+
+.list-benefits__item--meal::after {
+  content: url(../img/meal.svg);
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .list-benefits__item--tool::before {
   content: "";
   width: 60px;
   height: 60px;
-  background: url("../img/tool_icon.svg");
+  background: url("../img/green-back.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: unset;
   position: absolute;
 }
 
+.list-benefits__item--tool::after {
+  content: url(../img/icon-eat.svg);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+
 .list-benefits__item--time::before {
   content: "";
   width: 60px;
   height: 60px;
-  background: url("../img/time_icon.svg");
+  background: url("../img/green-back.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
   background-position: unset;
   position: absolute;
+}
+
+.list-benefits__item--time::after {
+  content: url(../img/tool.svg);
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .list-benefits {
     flex-direction: row;
     flex-wrap: wrap;
+    counter-reset: features 0;
   }
+
   .list-benefits__item {
     min-width: 246px;
     min-height: 280px;
@@ -74,20 +106,8 @@
     margin-right: 80px;
     display: flex;
     flex-direction: column;
-    }
-
-  .list-benefits__item::after {
-    content: "1";
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    color: #F2F2F2;
-    position: absolute;
-    top: 0px;
-    left: 100px;
-    z-index: 0;
   }
+
 
   .list-benefits__item-description {
     font-family: $lato, sans-serif;
@@ -99,67 +119,148 @@
     z-index: 10;
     top: 151px;
     padding: 0;
-}
-
-.list-benefits__item--nature::before {
-  width: 80px;
-  height: 80px;
-  background-size: 80px 80px;
-  top: 40px;
-}
-
-.list-benefits__item--meal::before {
-  width: 80px;
-  height: 80px;
-  background-size: 80px 80px;
-  top: 40px;
-}
-
-.list-benefits__item--tool::before {
-  width: 80px;
-  height: 80px;
-  background-size: 80px 80px;
-  top: 40px;
-}
-
-.list-benefits__item--time::before {
-  width: 80px;
-  height: 80px;
-  background-size: 80px 80px;
-  top: 40px;
-}
-
-}
-
-
-@media (min-width: $desktop-width) {
-  .list-benefits__item {
-    min-width: 230px;
-    position: relative;
-    margin-right: 70px;
   }
 
-  .list-benefits__item::after {
-    content: "1";
+  .list-benefits__item--nature {
+    counter-increment: features 1;
+  }
+
+  .list-benefits__item-description::after {
+    content: counter(features);
     font-family: $oswald;
     font-weight: 400;
     font-size: 280px;
     line-height: 280px;
-    color: #F2F2F2;
+    color: rgb(242, 242, 242);
     position: absolute;
-    top: -40px;
+    top: 0 px;
     left: 100px;
-    z-index: 0;
+    z-index: -10;
+    top: -148px;
+  }
+
+  .list-benefits__item--nature::before {
+    width: 80px;
+    height: 80px;
+    background-color: #68B738;
+    top: 40px;
+  }
+
+  .list-benefits__item--nature::after {
+    content: "";
+    background-image: url("../img/icon-leaf.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 28px;
+    background-position: top;
+    position: absolute;
+    top: 65px;
+    left: 26px;
+  }
+
+  .list-benefits__item--meal::before {
+    width: 80px;
+    height: 80px;
+    background-color: #68B738;
+    top: 40px;
+  }
+
+  .list-benefits__item--meal::after {
+    content: "";
+    background-image: url("../img/meal.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 28px;
+    background-position: top;
+    position: absolute;
+    top: 65px;
+    left: 26px;
+  }
+
+  .list-benefits__item--meal {
+    counter-increment: features 1;
+  }
+
+  .list-benefits__item--tool::before {
+    width: 80px;
+    height: 80px;
+    background-color: #68B738;
+    top: 40px;
+  }
+
+  .list-benefits__item--tool::after {
+    content: "";
+    background-image: url("../img/icon-eat.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 28px;
+    background-position: top;
+    position: absolute;
+    top: 65px;
+    left: 26px;
+  }
+
+  .list-benefits__item--tool {
+    counter-increment: features 1;
+  }
+
+  .list-benefits__item--time::before {
+    width: 80px;
+    height: 80px;
+    background-color: #68B738;
+    top: 40px;
+  }
+
+  .list-benefits__item--time::after {
+    content: "";
+    background-image: url("../img/tool.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 28px;
+    background-position: top;
+    position: absolute;
+    top: 65px;
+    left: 26px;
+  }
+
+  .list-benefits__item--time {
+    counter-increment: features 1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .list-benefits {
+    gap: 0;
+  }
+
+  .list-benefits__item {
+    min-width: 230px;
+    position: relative;
+    margin-right: 84px;
+  }
+
+  .list-benefits__item br {
+    display: none;
+  }
+
+  .list-benefits__item:last-of-type {
+    margin-right: 0;
   }
 
   .list-benefits__item-description {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
     color: #444444;
     position: relative;
     z-index: 10;
-}
+    max-width: 240px;
+  }
 
 }

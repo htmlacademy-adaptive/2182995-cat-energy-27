@@ -1,10 +1,10 @@
 .stat__wrapper {
-  margin: 0 auto;
+  margin: 0;
   min-width: 124px;
-  min-height: 70px;
-  position: relative;
+  min-height: 56px;
   display: flex;
   flex-direction: column-reverse;
+  border: 1px solid #cdcdcd;
 }
 
 .stat__cat-result {
@@ -13,8 +13,8 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  margin: 0;
-  color:#000000;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
 }
 
 .stat__title {
@@ -24,9 +24,10 @@
   line-height: 12px;
   color: $grey-main;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   max-width: 77px;
-  padding-left: 22px;
+  margin-bottom: -14px;
+  background-color: #EAEAEA;
 }
 
 .stat__total-price {
@@ -39,37 +40,59 @@
   @include center;
 }
 
-.stat__wrapper::before {
-  content: url("../img/weight-stat.svg");
-  position: absolute;
-}
 
 @media (min-width: $tablet-width) {
-
   .stat__total-price {
     font-size: 20px;
     line-height: 20px;
     max-width: 174px;
     text-align: end;
     margin: 0;
+    padding-left: 167px;
   }
 
   .stat__wrapper {
     margin: 0;
+  }
+
+  .stat__cat-result {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+  }
+
+  .stat__title {
+    background-color: #ffffff;
+  }
 }
 
-.stat__cat-result {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  margin: 0;
-  color: #000000;
-}
+@media (min-width:$desktop-width) {
+  .stat__title {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 130px;
+    margin-bottom: -26px;
+  }
 
-.stat__wrapper::before {
-  content: url("../img/weight-stat-tablet.svg");
-}
+  .stat__wrapper {
+    min-height: 77px;
+    min-width: 162px;
+    justify-content: center;
+  }
 
+  .stat__cat-result {
+    margin-bottom: 11px;
+  }
+
+  .stat__total-price {
+    min-width: 436px;
+    text-align: start;
+    padding: 0;
+    margin-top: 13px;
+  }
 }

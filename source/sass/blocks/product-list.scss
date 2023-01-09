@@ -4,6 +4,18 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
+
+}
+
+.product-list__item {
+  border-bottom: 1px solid #d9d9d9;
+  min-height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-list__item:last-of-type {
+  border-bottom: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,6 +30,8 @@
   .product-list__item {
     width: 324px;
     min-height: 511px;
+    border: none;
+    flex-direction: column;
   }
 }
 

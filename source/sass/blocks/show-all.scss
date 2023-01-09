@@ -5,6 +5,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .show-all__text {
@@ -13,9 +15,40 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey-main;
+  text-align: center;
 }
 
-@media (min-width:$desktop-width) {
+.show-all__wrapper {
+  position: relative;
+}
+
+.show-all__title::before {
+  content: "";
+  background-color: rgb(211, 211, 211) ;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  left: 122px;
+  top: 42px;
+}
+
+
+.show-all__title::after {
+  content: "";
+  background-color: rgb(211, 211, 211) ;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 162px;
+  left: 122px;
+}
+
+.show-all__button {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $desktop-width) {
   .show-all__button {
     width: 169px;
   }
