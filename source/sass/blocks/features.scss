@@ -1,9 +1,9 @@
-
 .features__wrapper {
   padding: 0 20px;
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 
 .features__title {
@@ -12,6 +12,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0;
 }
 
 .features__list {
@@ -25,7 +26,7 @@
     width: 768px;
     margin: 0 auto;
     box-sizing: border-box;
-
+    margin-top: 15px;
   }
 
   .features__list {
@@ -44,19 +45,18 @@
 }
 
 @media (min-width: $desktop-width) {
-    .features__wrapper {
+  .features__wrapper {
     padding: 0 55px;
     width: 1330px;
     margin: 0 auto;
     box-sizing: border-box;
-
   }
-    .features__title {
+
+  .features__title {
     font-family: $oswald;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
   }
-
 }

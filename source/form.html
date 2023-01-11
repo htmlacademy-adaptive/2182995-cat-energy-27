@@ -10,16 +10,18 @@
 
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__wrapper">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="../img/logo.svg" width="33" height="37" alt="Кэт энерджи">
-      <img class="main-header__logo-image" src="../img/caption.svg" width="101" height="18" alt="Кэт энерджи"></a>
-    <nav class="main-nav">
-      <button class="main-header__toggle" type="button">
-        <span class="visually hidden">Открыть меню</span>
+      <img src="../img/logo.svg" alt="логотип" width="33" height="37">
+      <img src="../img/caption.svg" alt="логотип" width="101" height="18">
+    </a>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-header__toggle main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a href="index.html">
               Главная
             </a>
@@ -29,14 +31,14 @@
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
-
     </nav>
+  </div>
   </header>
   <main class="main-container">
     <section class="selection-program">
@@ -68,8 +70,11 @@
             <legend class="visually-hidden">Цель</legend>
             <ul class="form-radio__list">
               <li class="form-radio__item">
-                <input class="form-radio__input" type="radio" name="goal" id="loss" checked>
-                <label for="loss" class="form-radio__label"> ПОХУДЕНИЕ </label>
+                <label for="loss" class="form-radio__control">
+                <input class="visually-hidden" type="radio" name="goal" id="loss" checked/>
+                <span class="form-radio__control-mark"></span>
+                <span class="form-radio__control-label">Похудение</span>
+                 </label>
               </li>
               <li class="form-radio__item">
                 <input class="form-radio__input" type="radio" name="goal" id="fatten">
@@ -200,6 +205,6 @@
         </div>
         </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
