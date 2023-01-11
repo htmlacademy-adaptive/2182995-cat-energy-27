@@ -4,6 +4,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional-item--mass,
@@ -17,12 +18,19 @@
 
 @media (min-width: $tablet-width) {
 
+  .additional-item a {
+    text-decoration: none;
+  }
+
   .additional-item--name {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 
   .additional-item--mass {
@@ -31,6 +39,8 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-item--price {
@@ -38,5 +48,25 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    font-size: 16px;
+    line-height: 20px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item--name {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .additional-item--price {
+    padding-right: 40px;
+  }
+
+  .additional-item a {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+
 }

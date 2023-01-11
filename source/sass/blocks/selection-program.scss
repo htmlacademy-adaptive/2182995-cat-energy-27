@@ -16,6 +16,10 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 37px;
+  border-top: 1px solid #DCDCDC;
 }
 
 .selection-program__text {
@@ -24,6 +28,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +36,10 @@
     width: 100%;
     margin: 0 auto;
   }
+
+  .selection-program__title {
+    border: none
+  };
 
   .selection-program__wrapper {
     width: 768px;
@@ -57,5 +66,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
+    margin-top: 66px;
+    margin-bottom: 61px;
   }
 }

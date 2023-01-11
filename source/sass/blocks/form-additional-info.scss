@@ -2,6 +2,8 @@
   width: 100%;
   padding: 0;
   border: none;
+  border-top: 2px solid #68B738;
+  margin-bottom: 40px;
 }
 
 .form-additional-info__title {
@@ -11,6 +13,10 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-top: -20px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  padding-right: 22px;
 }
 
 .form-additional-info__input {

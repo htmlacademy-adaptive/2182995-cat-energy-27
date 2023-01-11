@@ -1,4 +1,9 @@
 .main-header {
+  width: 100%;
+  position: relative;
+}
+
+.main-header__wrapper {
   @include center;
   width: 320px;
   padding: 0 20px;
@@ -8,29 +13,6 @@
   grid-auto-rows: minmax(24px, auto);
   gap: 60px;
   min-height: 66px;
-  position: relative;
-}
-
-.main-header::after {
-  content: "";
-  background-image: url("../img/logo.svg");
-  width: 33px;
-  height: 37px;
-  background-size: 33px 37px;
-  position: absolute;
-  left: 20px;
-  top: 10px;
-}
-
-.main-header::before {
-  content: "";
-  background-image: url("../img/caption.svg");
-  position: absolute;
-  width: 101px;
-  height: 18px;
-  background-size: 101px 18px;
-  left: 100px;
-  top: 23px;
 }
 
 .main-header__toggle {
@@ -58,34 +40,15 @@
   padding-top: 10px;
 }
 
-.main-header__logo {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 56px;
-}
 
 @media (min-width: $tablet-width) {
-  .main-header {
+  .main-header__wrapper {
     width: 768px;
     padding: 0 30px;
     box-sizing: border-box;
     display: flex;
     min-height: 52px;
     justify-content: end;
-  }
-
-  .main-header::before {
-    display: none;
-  }
-
-  .main-header::after {
-    content: "";
-    background-image: url("../img/logo-tablet.svg");
-    width: 174px;
-    height: 52px;
-    position: absolute;
-    background-size: 174px 52px;
-    top: 0px;
   }
 
   .main-header__toggle {
@@ -107,7 +70,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  .main-header__wrapper {
     width: 1330px;
     padding: 0 55px;
     box-sizing: border-box;
@@ -126,15 +89,5 @@
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
-
-  .main-header__logo::after {
-    top: 29px;
-    left: 75px;
-  }
-
-  .main-header__logo::before {
-    top: 33px;
-    left: 33px;
   }
 }

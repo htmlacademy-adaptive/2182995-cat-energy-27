@@ -8,7 +8,6 @@
 .main-nav--opened {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .main-nav--closed {
@@ -53,10 +52,11 @@
   @include center;
   padding: 0;
   top: 66px;
-  left: -273px;
+  left: 0px;
   z-index: 2;
   position: absolute;
   background-color: #ffffff;
+  width: 100%;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -87,7 +87,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
+  .main-nav--index-desktop {
     color: rgb(255, 255, 255);
   }
 }

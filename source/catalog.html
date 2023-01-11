@@ -10,19 +10,23 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html"></a>
-    <nav class="main-nav">
-      <button class="main-header__toggle" type="button">
-        <span class="visually hidden">Открыть меню</span>
+    <div class="main-header__wrapper">
+    <a class="main-header__logo" href="index.html">
+      <img src="../img/logo.svg" alt="логотип" width="33" height="37">
+      <img src="../img/caption.svg" alt="логотип" width="101" height="18">
+    </a>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-header__toggle main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item ">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a href="catalog.html">
               Каталог продукции
             </a>
@@ -33,8 +37,8 @@
             </a>
           </li>
         </ul>
-
     </nav>
+  </div>
   </header>
   <main class="main-catalog">
     <div class="main-catalog__wrapper">
@@ -186,8 +190,8 @@
       </ul>
 
     <section class="main-catalog__additional additional-products">
+      <h2 class="additional-products__title">Дополнительные товары</h2>
       <div class="additional-products__wrapper">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products__list additional-list">
           <li class="additional-list__item additional-item">
             <h3 class="additional-item additional-item--name">САХАРОЗАМЕНИТЕЛЬ</h3>

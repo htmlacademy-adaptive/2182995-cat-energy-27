@@ -11,31 +11,35 @@
 <body class="page__body">
   <div class="page__container">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html"></a>
+    <div class="main-header__wrapper">
+    <a class="main-header__logo" href="index.html">
+      <img src="../img/logo.svg" alt="логотип" width="33" height="37">
+      <img src="../img/caption.svg" alt="логотип" width="101" height="18">
+    </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-header__toggle main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item site-list__item-desktop-index site-list__item-desktop-index--current">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item-desktop-index">
             <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item-desktop-index">
             <a href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
-
     </nav>
+  </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Функциональное <br> питание для котов</h1>
