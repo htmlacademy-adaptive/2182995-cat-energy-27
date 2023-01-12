@@ -57,6 +57,23 @@
   box-sizing: border-box;
 }
 
+@media (min-width: $tablet-width) {
+  .form-info__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-info__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-info__title--owner {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form-info {
     grid-column-start: 1;

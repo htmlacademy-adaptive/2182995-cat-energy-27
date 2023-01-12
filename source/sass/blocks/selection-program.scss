@@ -29,6 +29,7 @@
   line-height: 18px;
   color: #000000;
   margin: 0;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +40,12 @@
 
   .selection-program__title {
     border: none
-  };
+  }
+
+  .selection-program__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   .selection-program__wrapper {
     width: 768px;

@@ -15,11 +15,12 @@
   color: #000000;
   margin-top: -20px;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: table;
   padding-right: 22px;
+  text-transform: none;
 }
 
-.form-additional-info__input {
+.form-additional-info__textarea {
   width: 100%;
   min-height: 150px;
   font-family: $oswald;
@@ -29,7 +30,19 @@
   color: $grey-main;
   border: 1px solid rgb(231, 231, 231);
   text-transform: uppercase;
-  text-align: center;
+
+}
+
+@media (min-width: $tablet-width) {
+  .form-additional-info__textarea {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-additional-info__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -39,4 +52,6 @@
     grid-row-start: 3;
     grid-row-end: 4;
   }
+
+
 }
