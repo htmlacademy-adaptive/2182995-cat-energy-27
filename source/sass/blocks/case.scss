@@ -1,6 +1,6 @@
 .case {
   width: 100%;
-  background-color: #EAEAEA;
+  background-color: rgb(234, 234, 234);
 }
 
 .case__wrapper {
@@ -8,7 +8,7 @@
   box-sizing: border-box;
   padding: 0 20px;
   @include center;
-
+  margin-top: 49px;
 }
 
 .case__title {
@@ -17,108 +17,124 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .case__description {
   @include main-text;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
 }
 
 .case__stat {
   @include center;
   width: 100%;
   display: flex;
-  gap: 32px;
+  gap: 28px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .case {
-  width: 100%;
-}
+    width: 100%;
+    background-color: #FFFFFF;
+  }
 
-.case__wrapper {
-  width: 768px;
-  box-sizing: border-box;
-  padding: 0 30px;
-
-}
+  .case__wrapper {
+    width: 768px;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
 
   .case__title {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
-  color: #000000;
-}
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
 
   .case__description {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $grey-main;
-}
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey-main;
+  }
 
   .case__stat {
-  display: flex;
-}
+    display: flex;
+  }
 
-.case__slider {
-  margin: 0 auto;
-}
+  .case__slider {
+    margin: 0 auto;
+  }
 
-.case__slider--img {
-  width: 560px;
-  height: 512px;
-  margin: 0 auto;
-}
+  .case__slider--img {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .case__example {
-  max-width: 440px;
-  @include center;
+    max-width: 440px;
+  }
 
-}
   .case {
-    display: flex;
-    justify-content: space-between;
+    background-color: #f2f2f2;
   }
 
   .case__wrapper {
     width: 1330px;
     box-sizing: border-box;
     padding: 0 55px;
-
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 209px;
+    min-height: 462px;
   }
 
   .case__title {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
-  color: #000000;
-}
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    position: absolute;
+    top: -160px;
+  }
 
   .case__description {
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $grey-main;
-}
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey-main;
+  }
 
   .case__stat {
-  display: flex;
-}
+    display: flex;
+    gap: 42px;
+    margin: 0;
+  }
 
-.case__slider {
-  margin: 0 auto;
-}
+  .case__slider {
+    margin: 0;
+    padding-left: 770px;
+    position: absolute;
+    top: -170px;
+  }
 
-.case__slider--img {
-  width: 560px;
-  height: 512px;
-  margin: 0 auto;
-}
+  .case__slider--img {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
 }

@@ -5,6 +5,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .show-all__text {
@@ -13,9 +15,91 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey-main;
+  text-align: center;
 }
 
-@media (min-width:$desktop-width) {
+.show-all__wrapper {
+  position: relative;
+}
+
+.show-all__title::before {
+  content: "";
+  background-color: rgb(211, 211, 211) ;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  left: 122px;
+  top: 42px;
+}
+
+
+.show-all__title::after {
+  content: "";
+  background-color: rgb(211, 211, 211) ;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 162px;
+  left: 122px;
+}
+
+.show-all__button {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-all__wrapper {
+    top: 150px;
+  }
+
+  .show-all__title {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 96px;
+    padding-right: 94px;
+  }
+
+  .show-all__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    padding-left: 80px;
+  }
+
+  .show-all__title::before {
+    width: 60px;
+  }
+
+  .show-all__title::after {
+    width: 60px;
+    bottom: 300px;
+  }
+
+  .show-all__wrapper::after {
+    content: "";
+    background-color: #FFFFFF ;
+    width: 328px;
+    height: 430px;
+    z-index: -9;
+    position: absolute;
+    top: -80px;
+    left: -1px;
+  }
+
+  .show-all__button {
+    width: 249px;
+    height: 40px;
+    margin-left: 38px;
+    margin-top: 70px;
+    margin-bottom: 38px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
   .show-all__button {
     width: 169px;
   }

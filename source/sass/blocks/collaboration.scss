@@ -6,10 +6,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
+  min-height: 112px;
+  align-items: center;
 }
 
 .collaboration {
-  background-color: #F2F2F2;
+  background-color: rgb(242, 242, 242);
   width: 100%;
 }
 
@@ -34,8 +36,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
-
   .collaboration__wrapper {
     width: 768px;
     padding: 56px 30px;
@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .collaboration__wrapper {
     width: 565px;
     padding: 56px 80px;
@@ -74,5 +74,4 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
 }
