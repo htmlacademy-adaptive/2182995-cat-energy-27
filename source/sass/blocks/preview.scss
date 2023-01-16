@@ -90,6 +90,10 @@
   position: relative;
 }
 
+.preview__link:active {
+  opacity: 0.3;
+}
+
 .preview__link::after {
   content: url(../img/arrow.svg);
   position: absolute;

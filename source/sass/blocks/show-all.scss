@@ -48,6 +48,10 @@
   margin-bottom: 25px;
 }
 
+.show-all__button-name:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .show-all__wrapper {
     top: 150px;

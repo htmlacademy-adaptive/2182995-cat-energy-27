@@ -4,6 +4,10 @@
   border-top: 1px solid #68b738;
 }
 
+.additional-products__button-name:active {
+  opacity: 0.3;
+}
+
 .additional-products__title {
   font-family: $oswald;
   font-weight: 400;

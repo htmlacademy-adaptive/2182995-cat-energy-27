@@ -40,6 +40,28 @@
   padding-top: 10px;
 }
 
+.main-header__link {
+  position: relative;
+  cursor: pointer;
+}
+
+.main-header__link:hover {
+  opacity: 0.8;
+}
+
+.main-header__link:active {
+  opacity: 0.3;
+}
+
+.main-header__link::after {
+  content: url(../img/caption.svg);
+  width: 101px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 77px;
+}
+
 
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
@@ -49,6 +71,10 @@
     display: flex;
     min-height: 52px;
     justify-content: end;
+  }
+
+  .main-header__link::after {
+    display: none;
   }
 
   .main-header__toggle {

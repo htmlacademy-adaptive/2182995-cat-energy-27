@@ -4,6 +4,10 @@
   min-height: 480px;
 }
 
+.promo__button-name:active {
+  opacity: 0.3;
+}
+
 .promo::before {
   content: "";
   position: absolute;
