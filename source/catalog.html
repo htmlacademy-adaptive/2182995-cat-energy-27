@@ -6,14 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../img/favicons/apple-icon-180x180.png">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-    <a class="main-header__logo" href="index.html">
-      <img src="../img/logo.svg" alt="логотип" width="33" height="37">
-      <img src="../img/caption.svg" alt="логотип" width="101" height="18">
+    <a class="main-header__link" href="index.html">
+      <picture>
+        <source media="(min-width: 1330px)" srcset="../img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+      <img class="main-header__logo" src="../img/logo.svg" alt="логотип" width="33" height="37">
+    </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-header__toggle main-nav__toggle" type="button">
@@ -46,10 +53,12 @@
       <ul class="main-catalog__list product-list">
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product1.jpg" width="140" height="112"
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product1.png, img/product1@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product1-mobile.png" srcset="../img/product1-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
+            </picture>
           </a>
-
           <div class="main-products__details ">
             <a class="main-products__name" href="#">Cat Energy PRO 500 г</a>
             <p class="main-products__item">Масса</p>
@@ -60,15 +69,19 @@
             <span class="main-products__item main-products__item--price">700 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+              <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product2.jpg" width="140" height="112"
-              alt="Cat Energy PRO 1000 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product2.png, img/product2@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product2-mobile.png" srcset="../img/product2-mobile@2x.png 2x" width="68" height="86"
+              alt="Cat Energy PRO 500 г">
+            </picture>
           </a>
-
           <div class="main-products__details">
             <a class="main-products__name" href="#">Cat Energy PRO 1000 г</a>
             <p class="main-products__item">Масса</p>
@@ -79,15 +92,19 @@
             <span class="main-products__item main-products__item--price">1000 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+              <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product3.jpg" width="140" height="112"
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product3.png, img/product3@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product3-mobile.png" srcset="../img/product3-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
+            </picture>
           </a>
-
           <div class="main-products__details ">
             <a class="main-products__name" href="#">Cat Energy PRO 500 г</a>
             <p class="main-products__item">Масса</p>
@@ -98,15 +115,19 @@
             <span class="main-products__item main-products__item--price">700 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+              <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product4.jpg" width="140" height="112"
-              alt="Cat Energy PRO 1000 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product4.png, img/product4@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product4-mobile.png" srcset="../img/product4-mobile@2x.png 2x" width="68" height="86"
+              alt="Cat Energy PRO 500 г">
+            </picture>
           </a>
-
           <div class="main-products__details">
             <a class="main-products__name" href="#">Cat Energy PRO 1000 г</a>
           <p class="main-products__item">Масса</p>
@@ -117,15 +138,19 @@
             <span class="main-products__item main-products__item--price">1000 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+              <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product5.jpg" width="140" height="112"
-              alt="Cat Energy SLIM 500 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product5.png, img/product5@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product5-mobile.png" srcset="../img/product5-mobile@2x.png 2x" width="68" height="86"
+              alt="Cat Energy PRO 500 г">
+            </picture>
           </a>
-
           <div class="main-products__details">
             <a class="main-products__name" href="#">Cat Energy SLIM 500 г</a>
             <p class="main-products__item">Масса</p>
@@ -136,15 +161,19 @@
             <span class="main-products__item main-products__item--price">400 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+            <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product6.jpg" width="140" height="112"
-              alt="Cat Energy SLIM 1000 г">
-          </a>
-
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product6.png, img/product6@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product6-mobile.png" srcset="../img/product6-mobile@2x.png 2x" width="68" height="86"
+              alt="Cat Energy PRO 500 г">
+            </picture>
+           </a>
           <div class="main-products__details">
             <a class="main-products__name" href="#">Cat Energy SLIM 1000 г</a>
             <p class="main-products__item">Масса</p>
@@ -155,15 +184,19 @@
             <span class="main-products__item main-products__item--price">700 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+              <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
-            <img class="main-products__image" src="../img/product7.jpg" width="140" height="112"
-              alt="Cat Energy SLIM 500 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/product7.png, img/product7@2x.png 2x">
+            <img class="main-products__image-small" src="../img/product7-mobile.png" srcset="../img/product7-mobile@2x.png 2x" width="68" height="86"
+              alt="Cat Energy PRO 500 г">
+            </picture>
           </a>
-
           <div class="main-products__details ">
             <a class="main-products__name" href="#">Cat Energy SLIM 500 г</a>
             <p class="main-products__item">Масса</p>
@@ -174,7 +207,9 @@
             <span class="main-products__item main-products__item--price">500 ₽</span>
           </div>
           <form action="description-products.html" target="_blank">
-            <button class="main-products__button button-secondary" type="button">ЗАКАЗАТЬ</button>
+            <button class="main-products__button button-secondary" type="button">
+              <span class="main-products__button-name">ЗАКАЗАТЬ</span>
+            </button>
           </form>
         </li>
         <li class="product-list__item main-products">
@@ -182,7 +217,9 @@
             <h2 class="show-all__title">Показать еще 100500 товаров</h2>
             <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
             <form action="list-products.html" target="_blank">
-              <button class="show-all__button button-secondary--grey" type="button">Показать все</button>
+              <button class="show-all__button button-secondary--grey" type="button">
+                <span class="show-all__button-name">Показать все</span>
+              </button>
             </form>
           </div>
 
@@ -198,7 +235,9 @@
             <p class="additional-item additional-item--mass">1 упаковка (100 г)</p>
             <span class="additional-item additional-item--price">200 ₽</span>
             <a  class= "additional-products__link" href="description-products.html">
-              <button class="additional-products__button button-secondary"  type="button">ЗАКАЗАТЬ</button>
+              <button class="additional-products__button button-secondary"  type="button">
+                <span class= "additional-products__button-name">ЗАКАЗАТЬ</span>
+              </button>
             </a>
           </li>
           <li class="additional-list__item additional-item">
@@ -206,7 +245,9 @@
             <p class="additional-item additional-item--mass">5 литров</p>
             <span class="additional-item additional-item--price">50 ₽</span>
             <a  class= "additional-products__link" href="description-products.html">
-              <button class="additional-products__button button-secondary"  type="button">ЗАКАЗАТЬ</button>
+              <button class="additional-products__button button-secondary"  type="button">
+                <span class= "additional-products__button-name">ЗАКАЗАТЬ</span>
+              </button>
             </a>
           </li>
           <li class="additional-list__item additional-item">
@@ -214,7 +255,9 @@
             <p class="additional-item additional-item--mass">1 литр</p>
             <span class="additional-item additional-item--price">100 ₽</span>
             <a  class= "additional-products__link" href="description-products.html">
-              <button class="additional-products__button button-secondary"  type="button">ЗАКАЗАТЬ</button>
+              <button class="additional-products__button button-secondary"  type="button">
+                <span class= "additional-products__button-name">ЗАКАЗАТЬ</span>
+              </button>
             </a>
           </li>
           <li class="additional-list__item additional-item">
@@ -222,7 +265,9 @@
             <p class="additional-item additional-item--mass">1 упаковка (30гр)</p>
             <span class="additional-item additional-item--price">300 ₽</span>
             <a  class= "additional-products__link" href="description-products.html">
-              <button class="additional-products__button button-secondary"  type="button">ЗАКАЗАТЬ</button>
+              <button class="additional-products__button button-secondary"  type="button">
+                <span class= "additional-products__button-name">ЗАКАЗАТЬ</span>
+              </button>
             </a>
           </li>
         </ul>

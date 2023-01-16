@@ -4,6 +4,10 @@
   border-top: 1px solid #68b738;
 }
 
+.additional-products__button-name:active {
+  opacity: 0.3;
+}
+
 .additional-products__title {
   font-family: $oswald;
   font-weight: 400;
@@ -40,6 +44,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-gift@2x.jpg");
+  }
 }
 
 .additional-products__gift--slogan {
