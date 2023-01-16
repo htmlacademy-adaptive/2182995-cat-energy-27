@@ -64,9 +64,10 @@
   }
 
   .main-header__logo {
-    gap: 19px;
-    position: relative;
+    width: 174px;
+    height: 52px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -79,6 +80,12 @@
     gap: 538px;
     min-height: 140px;
   }
+
+  .main-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+
 
   .main-header__toggle {
     position: absolute;

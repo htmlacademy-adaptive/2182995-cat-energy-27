@@ -17,6 +17,10 @@
   right: 0;
   left: 0;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat@2x.jpg");
+  }
 }
 
 .promo__wrapper {
@@ -92,6 +96,7 @@
     margin-top: -80px;
     order: 4;
     z-index: -1;
+    position: absolute;
   }
 
   .promo__title {
@@ -152,6 +157,10 @@
     margin: 0;
     left: 50%;
     display: block;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/index-desktop@2x.jpg");
+    }
   }
 
   .promo__wrapper {

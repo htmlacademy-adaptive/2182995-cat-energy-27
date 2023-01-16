@@ -40,6 +40,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-gift@2x.jpg");
+  }
 }
 
 .additional-products__gift--slogan {
