@@ -141,10 +141,11 @@
 @media (min-width: $desktop-width) {
   .promo {
     width: 100%;
-    min-height: 696px;
+    min-height: 480px;
     background-repeat: no-repeat, no-repeat;
     margin: 0 auto;
     position: inherit;
+    margin-top: 79px;
   }
 
   .promo::before {
@@ -172,13 +173,14 @@
     padding: 0 55px;
     box-sizing: border-box;
     position: relative;
+    gap: 40px;
   }
 
   .promo__image {
     width: 552px;
     height: 499px;
     position: absolute;
-    top: -10px;
+    top: -24px;
     right: 277px;
   }
 
@@ -189,6 +191,8 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    padding: 0;
+    padding-left: 80px;
   }
 
   .promo__slogan {
@@ -197,12 +201,16 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    text-transform: uppercase;
+    padding-left: 80px;
   }
 
   .promo__button {
     position: absolute;
-    top: 220px;
-    left: 58px;
+    top: 185px;
+    left: 54px;
     z-index: 10;
+    margin-left: 80px;
+    margin-top: 52px;
   }
 }

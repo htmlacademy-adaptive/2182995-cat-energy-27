@@ -105,7 +105,7 @@
     color: #444444;
     position: relative;
     z-index: 10;
-    top: 151px;
+    top: 145px;
     padding: 0;
   }
 
@@ -121,17 +121,16 @@
     line-height: 280px;
     color: rgb(242, 242, 242);
     position: absolute;
-    top: 0 px;
-    left: 100px;
+    left: 117px;
     z-index: -10;
-    top: -148px;
+    top: -151px;
   }
 
   .list-benefits__item--nature::before {
     width: 80px;
     height: 80px;
     background-color: #68B738;
-    top: 40px;
+    top: 34px;
   }
 
   .list-benefits__item--nature::after {
@@ -143,15 +142,15 @@
     height: 28px;
     background-position: top;
     position: absolute;
-    top: 65px;
-    left: 26px;
+    top: 60px;
+    left: 29px;
   }
 
   .list-benefits__item--meal::before {
     width: 80px;
     height: 80px;
     background-color: #68B738;
-    top: 40px;
+    top: 34px;
   }
 
   .list-benefits__item--meal::after {
@@ -163,8 +162,8 @@
     height: 28px;
     background-position: top;
     position: absolute;
-    top: 65px;
-    left: 26px;
+    top: 60px;
+    left: 29px;
   }
 
   .list-benefits__item--meal {
@@ -175,7 +174,7 @@
     width: 80px;
     height: 80px;
     background-color: #68B738;
-    top: 40px;
+    top: 34px;
   }
 
   .list-benefits__item--tool::after {
@@ -187,8 +186,8 @@
     height: 28px;
     background-position: top;
     position: absolute;
-    top: 65px;
-    left: 26px;
+    top: 60px;
+    left: 29px;
   }
 
   .list-benefits__item--tool {
@@ -199,7 +198,7 @@
     width: 80px;
     height: 80px;
     background-color: #68B738;
-    top: 40px;
+    top: 34px;
   }
 
   .list-benefits__item--time::after {
@@ -211,8 +210,8 @@
     height: 28px;
     background-position: top;
     position: absolute;
-    top: 65px;
-    left: 26px;
+    top: 60px;
+    left: 29px;
   }
 
   .list-benefits__item--time {
@@ -227,7 +226,7 @@
   }
 
   .list-benefits__item {
-    width: 230px;
+    width: 240px;
     position: relative;
     margin-right: 84px;
   }

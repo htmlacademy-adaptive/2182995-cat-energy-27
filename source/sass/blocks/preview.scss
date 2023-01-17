@@ -217,11 +217,15 @@
     justify-content: space-between;
     box-sizing: border-box;
     flex-wrap: wrap;
+    margin-top: 82px;
   }
 
   .preview__container {
     width: 570px;
     min-height: 374px;
+    padding: 72px 55px 53px 52px;
+    margin: 0;
+    margin-bottom: 65px;
   }
 
   .preview__icon {
@@ -230,7 +234,7 @@
   }
 
   .preview__title {
-    padding-left: 159px;
+    padding-left: 165px;
     margin-bottom: 73px;
   }
 
@@ -243,28 +247,28 @@
     width: 100px;
     height: 100px;
     left: 0px;
-    top: -27px;
+    top: -35px;
   }
 
   .preview__title-mass::before {
     width: 100px;
     height: 100px;
     left: 0px;
-    top: -27px;
+    top: -35px;
   }
 
   .preview__title::after {
     content: url(../img/cat-slim-desktop.svg);
     position: absolute;
     left: 15px;
-    top: -31px;
+    top: -38px;
   }
 
   .preview__title-mass::after {
     content: url(../img/cat-pro-desktop.svg);
     position: absolute;
-    left: -13px;
-    top: 0px;
+    left: -17px;
+    top: -15px;
     z-index: 10;
   }
 
@@ -272,7 +276,13 @@
     display: none;
   }
 
+  .preview__link::after {
+    right: -50px;
+  }
+
+
   .preview__info {
     width: 100%;
+    margin-bottom: 25px;
   }
 }
