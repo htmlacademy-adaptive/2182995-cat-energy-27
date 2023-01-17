@@ -19,6 +19,16 @@
   text-align: center;
   width: 128px;
   height: 24px;
+  fill:#111111;
+}
+
+.socials__logo:hover,
+.socials__logo:focus {
+  fill: #3E3E3E;
+}
+
+.socials__logo:active {
+  fill: #6B6B6B;
 }
 
 .socials__list {
@@ -36,6 +46,17 @@
 .socials__icon {
   width: 24px;
   height: 19px;
+  fill:#666666;
+}
+
+.socials__icon:hover,
+.socials__icon:focus {
+  fill:#68B738;
+}
+
+.socials__icon:active {
+  opacity: 0.3;
+  fill:#68B738;
 }
 
 
