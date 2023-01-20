@@ -91,7 +91,7 @@ const optimizeImages = () => {
 
   const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
+  'source/fonts/**/*.{woff2,woff}',
   'source/*.ico',
   ], {
   base: 'source'
@@ -106,7 +106,7 @@ const optimizeImages = () => {
   return deleteAsync('build');
   };
 
-  // Server
+  //Server
 
   const server = (done) => {
   browser.init({
@@ -154,7 +154,7 @@ const optimizeImages = () => {
   // Default
 
   export default gulp.series(
-  clean,
+  // clean,
   copy,
   copyImages,
   gulp.parallel(
