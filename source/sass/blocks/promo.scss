@@ -54,10 +54,12 @@
   text-align: center;
   padding-left: 40px;
   padding-right: 42px;
+  text-transform: uppercase;
 }
 
 .promo__image {
   padding-top: 29px;
+  padding-bottom: 5px;
 }
 
 .promo__wrapper a {
@@ -70,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    min-height: 900px;
+    min-height: 870px;
   }
 
   .promo::before {
@@ -101,6 +103,7 @@
     order: 4;
     z-index: -1;
     position: absolute;
+    top: 311px;
   }
 
   .promo__title {
@@ -111,6 +114,8 @@
     color: #000000;
     padding-left: 90px;
     text-align: start;
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 
   .promo__slogan {
@@ -193,6 +198,7 @@
     color: #000000;
     padding: 0;
     padding-left: 80px;
+    max-width: 416px;
   }
 
   .promo__slogan {
@@ -206,11 +212,8 @@
   }
 
   .promo__button {
-    position: absolute;
-    top: 185px;
-    left: 54px;
     z-index: 10;
     margin-left: 80px;
-    margin-top: 52px;
+    margin-top: -23px;
   }
 }

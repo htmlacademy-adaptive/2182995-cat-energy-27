@@ -91,7 +91,7 @@
     width: 246px;
     min-height: 280px;
     position: relative;
-    margin-right: 80px;
+    margin-right: 98px;
     display: flex;
     flex-direction: column;
   }
@@ -107,6 +107,7 @@
     z-index: 10;
     top: 145px;
     padding: 0;
+    max-width: 245px;
   }
 
   .list-benefits__item--nature {
@@ -121,9 +122,9 @@
     line-height: 280px;
     color: rgb(242, 242, 242);
     position: absolute;
-    left: 117px;
+    left: 140px;
     z-index: -10;
-    top: -151px;
+    top: -145px;
   }
 
   .list-benefits__item--nature::before {
@@ -151,6 +152,7 @@
     height: 80px;
     background-color: #68B738;
     top: 34px;
+    left: 20px;
   }
 
   .list-benefits__item--meal::after {
@@ -163,7 +165,7 @@
     background-position: top;
     position: absolute;
     top: 60px;
-    left: 29px;
+    left: 49px;
   }
 
   .list-benefits__item--meal {
@@ -174,7 +176,7 @@
     width: 80px;
     height: 80px;
     background-color: #68B738;
-    top: 34px;
+    top: 48px;
   }
 
   .list-benefits__item--tool::after {
@@ -186,7 +188,7 @@
     height: 28px;
     background-position: top;
     position: absolute;
-    top: 60px;
+    top: 73px;
     left: 29px;
   }
 
@@ -198,7 +200,8 @@
     width: 80px;
     height: 80px;
     background-color: #68B738;
-    top: 34px;
+    top: 49px;
+    left: 22px;
   }
 
   .list-benefits__item--time::after {
@@ -210,8 +213,8 @@
     height: 28px;
     background-position: top;
     position: absolute;
-    top: 60px;
-    left: 29px;
+    top: 74px;
+    left: 48px;
   }
 
   .list-benefits__item--time {

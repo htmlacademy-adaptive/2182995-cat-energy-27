@@ -19,6 +19,8 @@
   margin: 0;
   border-bottom: 1px solid rgb(217, 217, 217);
   margin-bottom: 19px;
+  margin-top: 10px;
+  max-width: 340px;
 }
 
 .preview__title {
@@ -126,8 +128,14 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    margin: 0;
     margin-bottom: 52px;
     border: none;
+    max-width: 340px;
+  }
+
+  .preview__info br {
+    display: none;
   }
 
   .preview__title {
@@ -155,7 +163,8 @@
     height: 200px;
     content: "";
     position: absolute;
-    left: 411px;
+    left: 396px;
+    top: 16px;
   }
 
   .preview__title::after {
@@ -163,8 +172,8 @@
     position: absolute;
     width: 140px;
     height: 194px;
-    left: 435px;
-    top: -23px;
+    left: 426px;
+    top: 4px;
   }
 
   .preview__title-mass::after {
@@ -172,8 +181,8 @@
     position: absolute;
     width: 268px;
     height: 112px;
-    left: 373px;
-    top: 45px;
+    left: 361px;
+    top: 57px;
     z-index: 10;
   }
 
@@ -184,7 +193,8 @@
     height: 200px;
     content: "";
     position: absolute;
-    left: 411px;
+    left: 395px;
+    top: 14px;
   }
 
   .preview__icon {
@@ -204,7 +214,8 @@
   }
 
   .preview__link::after {
-    right: -40px;
+    right: -51px;
+    top: -3px;
   }
 }
 

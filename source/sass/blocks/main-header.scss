@@ -19,13 +19,14 @@
   display: block;
   width: 24px;
   height: 16px;
-  background-color: #ffffff;
   border: none;
   position: absolute;
   cursor: pointer;
   top: 24px;
   z-index: 2;
   padding: 0;
+  background-color: #FFFFFF;
+  margin-left: 50px;
 }
 
 .main-header__caption {
@@ -58,8 +59,12 @@
   width: 101px;
   height: 18px;
   position: absolute;
-  top: 10px;
-  left: 77px;
+  top: 22px;
+  left: 90px;
+}
+
+.main-header__logo {
+  margin-top: 10px;
 }
 
 
@@ -71,6 +76,7 @@
     display: flex;
     min-height: 52px;
     justify-content: end;
+    gap: 95px;
   }
 
   .main-header__link::after {
@@ -92,6 +98,7 @@
   .main-header__logo {
     width: 174px;
     height: 52px;
+    margin-top: 0;
   }
 
 }

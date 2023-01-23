@@ -13,37 +13,37 @@
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <div class="main-header__wrapper">
     <a class="main-header__link" href="index.html">
       <picture>
-        <source media="(min-width: 1330px)" srcset="../img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-      <img class="main-header__logo" src="../img/logo.svg" alt="логотип" width="33" height="37">
+        <source media="(min-width: 1330px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <img class="main-header__logo" src="img/logo.svg" alt="логотип" width="33" height="37">
     </picture>
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-header__toggle main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
-        <ul class="main-nav__list site-list">
+    <nav class="main-nav main-nav--nojs">
+        <ul class="main-nav__list main-nav__list--closed site-list">
           <li class="site-list__item ">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item  site-list__item--current">
             <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item ">
             <a href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
+        <button class="main-header__toggle main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
     </nav>
   </div>
   </header>
@@ -55,7 +55,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product1.png, img/product1@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product1-mobile.png" srcset="../img/product1-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image-small" src="img/product1-mobile.png" srcset="img/product1-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
             </picture>
           </a>
@@ -78,7 +78,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product2.png, img/product2@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product2-mobile.png" srcset="../img/product2-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image" src="img/product2-mobile.png" srcset="img/product2-mobile@2x.png 2x" width="84" height="100"
               alt="Cat Energy PRO 500 г">
             </picture>
           </a>
@@ -101,7 +101,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product3.png, img/product3@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product3-mobile.png" srcset="../img/product3-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image-small" src="img/product3-mobile.png" srcset="img/product3-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
             </picture>
           </a>
@@ -124,7 +124,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product4.png, img/product4@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product4-mobile.png" srcset="../img/product4-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image" src="img/product4-mobile.png" srcset="img/product4-mobile@2x.png 2x" width="84" height="100"
               alt="Cat Energy PRO 500 г">
             </picture>
           </a>
@@ -147,7 +147,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product5.png, img/product5@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product5-mobile.png" srcset="../img/product5-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image-small" src="img/product5-mobile.png" srcset="img/product5-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
             </picture>
           </a>
@@ -170,7 +170,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product6.png, img/product6@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product6-mobile.png" srcset="../img/product6-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image" src="img/product6-mobile.png" srcset="img/product6-mobile@2x.png 2x" width="84" height="100"
               alt="Cat Energy PRO 500 г">
             </picture>
            </a>
@@ -193,7 +193,7 @@
           <a class="main-products__image-link" href="#">
             <picture>
               <source media="(min-width: 768px)" srcset="img/product7.png, img/product7@2x.png 2x">
-            <img class="main-products__image-small" src="../img/product7-mobile.png" srcset="../img/product7-mobile@2x.png 2x" width="68" height="86"
+            <img class="main-products__image-small" src="img/product7-mobile.png" srcset="img/product7-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
             </picture>
           </a>
@@ -292,48 +292,48 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619335193877!2d30.32197451414531!3d59.93845850496381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669480901189!5m2!1sru!2sru"
       width="480" height="543" style="border: 0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <section class="socials">
-        <div class="socials__wrapper">
-        <a class="socials__logo" href="index.html">
-          <svg class="socials-logo" width="128" height="24">
-            <use href="../img/sprite.svg#caption-logo"></use>
-          </svg>
-         </a>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vkontakte" href="#">
-              <svg class="socials__icon" width="43" height="34" >
-                <use href="../img/sprite.svg#socials-icon-vk"></use>
-                </svg>
-            <span class="visually-hidden"> Мы в контакте</span>
-          </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#">
-              <svg class="socials__icon" width="37" height="29">
-                <use href="../img/sprite.svg#socials-icon-youtube"></use>
-                </svg>
-              <span class="visually-hidden">Мы в ютубе</span></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--telegram" href="#">
-              <svg class="socials__icon" width="43" height="34">
-              <use href="../img/sprite.svg#socials-icon-tg"></use>
-                </svg>
-            <span class="visually-hidden">Мы в телеграм</span>
-          </a>
-          </li>
-        </ul>
-        <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">
-                     <span class="copyright__name">HTML Academy</span>
-                     <svg class="copyright__logo" width="27" height="34">
-                    <use href="../img/sprite.svg#logo-academy"></use>
-                     </svg>
-          </a>
-        </div>
-      </div>
-      </section>
+  <section class="socials">
+    <div class="socials__wrapper">
+    <a class="socials__link-logo" href="index.html">
+      <svg class="socials__logo" width="128" height="24">
+        <use href="img/sprite.svg#caption-logo"></use>
+      </svg>
+     </a>
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a class="socials__link socials__link--vkontakte" href="#">
+          <svg class="socials__icon" width="43" height="34" >
+            <use href="img/sprite.svg#vkontakte"></use>
+            </svg>
+        <span class="visually-hidden"> Мы в контакте</span>
+      </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--youtube" href="#">
+          <svg class="socials__icon" width="37" height="29">
+            <use href="img/sprite.svg#youtube"></use>
+            </svg>
+          <span class="visually-hidden">Мы в ютубе</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--telegram" href="#">
+          <svg class="socials__icon" width="43" height="34">
+          <use href="img/sprite.svg#telegram"></use>
+            </svg>
+        <span class="visually-hidden">Мы в телеграм</span>
+      </a>
+      </li>
+    </ul>
+    <div class="copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru">
+                 <span class="copyright__name">HTML Academy</span>
+                 <svg class="copyright__logo" width="27" height="34">
+                <use href="img/sprite.svg#html-academy"></use>
+                 </svg>
+      </a>
+    </div>
+  </div>
+</section>
 </footer>
 <script src="js/script.js"></script>
 </body>

@@ -1,7 +1,8 @@
 .additional-products {
   @include center;
-  width: 100%;
+  width: inherit;
   border-top: 1px solid #68b738;
+  margin-bottom: 43px;
 }
 
 .additional-products__button-name:active {
@@ -16,7 +17,7 @@
   color: #000000;
   position: relative;
   margin: 0;
-  margin-top: -18px;
+  margin-top: -21px;
   padding-bottom: 36px;
   background-color: rgb(255, 255, 255);
   width: fit-content;
@@ -29,10 +30,10 @@
   border-top: 1px solid #CDCDCD;
   border-bottom: 1px solid #CDCDCD;
   margin-bottom: 35px;
+  width: fit-content;
 }
 
 .additional-products__gift {
-  @include center;
   min-height: 290px;
   background-image: url("../img/catalog-gift.jpg");
   background-size: cover;
@@ -44,6 +45,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: 280px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/catalog-gift@2x.jpg");
@@ -52,7 +54,7 @@
 
 .additional-products__gift--slogan {
   margin: 0;
-  padding-top: 186px;
+  padding-top: 195px;
   position: relative;
 }
 
@@ -70,8 +72,13 @@
 
 @media (min-width: $tablet-width) {
   .additional-products__list {
-    border-top: 1px solid #CDCDCD;
+    border-top: none;
     margin-bottom: 69px;
+  }
+
+  .additional-products__wrapper {
+    margin: 0 auto;
+    border: 1px solid #CDCDCD;
   }
 
   .additional-products__button {
@@ -110,13 +117,14 @@
   .additional-products {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .additional-products__gift--slogan::before {
     width: 80px;
     height: 82px;
-    left: -330px;
-    top: -19%;
+    left: -344px;
+    top: -23%;
   }
 
   .additional-products__gift--slogan {
@@ -126,6 +134,7 @@
     line-height: 20px;
     width: 161px;
     padding: 0;
+    text-align: initial;
   }
 }
 

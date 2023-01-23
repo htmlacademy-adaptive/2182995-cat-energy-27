@@ -1,6 +1,6 @@
 .collaboration__wrapper {
   width: 320px;
-  padding: 0 20px;
+  padding: 0 14px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +42,7 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 199px;
   }
 
@@ -52,7 +52,9 @@
     font-size: 20px;
     line-height: 26px;
     color: #111111;
+    padding-left: 41px;
   }
+
 
   .collaboration__address {
     font-family: $lato;
@@ -62,6 +64,9 @@
     line-height: 20px;
     color: $grey-main;
     text-decoration: none;
+    padding-right: 41px;
+    margin-bottom: 5px;
+    text-align: end;
   }
 }
 

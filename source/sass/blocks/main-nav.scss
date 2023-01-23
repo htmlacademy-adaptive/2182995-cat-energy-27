@@ -14,7 +14,7 @@
   display: none;
 }
 
-.main-nav__list--closed .main-nav__toggle::before {
+.main-nav__list--closed ~ .main-header__toggle::before {
   content: "";
   position: absolute;
   width: 24px;
@@ -22,12 +22,12 @@
   background-color: #000000;
   top: 0;
   right: 0;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 rgb(0, 0, 0) ;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 rgb(0, 0, 0);
   display: block;
 }
 
-.main-nav__list--opened .main-nav__toggle::before,
-.main-nav__list--opened .main-nav__toggle::after {
+.main-nav__list--opened ~ .main-nav__toggle::before,
+.main-nav__list--opened ~ .main-nav__toggle::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -35,15 +35,14 @@
   background-color: #000000;
   top: 0;
   right: 0;
-
 }
 
-.main-nav__list--opened .main-nav__toggle::before {
+.main-nav__list--opened ~ .main-nav__toggle::before {
   transform: rotate(45deg);
   box-shadow: none;
 }
 
-.main-nav__list--opened .main-nav__toggle::after {
+.main-nav__list--opened ~ .main-nav__toggle::after {
   transform: rotate(-45deg);
   box-shadow: none;
 }
