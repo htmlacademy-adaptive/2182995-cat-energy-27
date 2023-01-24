@@ -63,7 +63,10 @@
     width: 100%;
   }
 
-
+  .main-catalog__title {
+    margin-top: 47px;
+    margin-bottom: 101px;
+  }
 
   .main-catalog__wrapper {
     width: 1330px;
@@ -71,5 +74,9 @@
     box-sizing: border-box;
     @include center;
     border: none;
+  }
+
+  .main-catalog__additional {
+    margin-bottom: 13px;
   }
 }

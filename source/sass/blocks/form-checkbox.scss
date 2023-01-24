@@ -2,7 +2,17 @@
   border: none;
   padding: 0;
   margin: 0;
-  border-top: 2px solid #68B738;
+  width: 100%;
+}
+
+.form-checkbox::before {
+  content:"";
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  position: absolute;
+  z-index: -10;
+
 }
 
 .form-checkbox__title {
@@ -18,6 +28,7 @@
   display: table;
   padding-right: 23px;
   padding-bottom: 34px;
+
 }
 
 .form-checkbox__list {
@@ -71,6 +82,10 @@
   .form-checkbox__control-mark {
     width: 40px;
     height: 40px;
+  }
+
+  .form-checkbox::before {
+    left: 0px;
   }
 
   .form-checkbox__input[type="checkbox"]:checked + .form-checkbox__control-mark {

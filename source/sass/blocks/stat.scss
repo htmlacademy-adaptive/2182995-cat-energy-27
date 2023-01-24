@@ -122,5 +122,15 @@
     text-align: start;
     padding: 0;
     margin-top: 17px;
+    flex-direction: row;
+    gap: 63px;
+  }
+
+  .stat__total-amount {
+    padding: 0;
+  }
+
+  .stat__total-name {
+    padding: 0;
   }
 }

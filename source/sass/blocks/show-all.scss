@@ -20,7 +20,7 @@
   margin-bottom: 23px;
 }
 
-.show-all__wrapper {
+.show-all-wrapper {
   position: relative;
   width: 280px;
   margin-top: -29px;
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .show-all__wrapper {
+  .show-all-wrapper {
     top: 136px;
   }
 
@@ -116,5 +116,10 @@
 @media (min-width: $desktop-width) {
   .show-all__button {
     width: 169px;
+  }
+
+  .show-all-wrapper {
+    top: 124px;
+    left: -21px;
   }
 }

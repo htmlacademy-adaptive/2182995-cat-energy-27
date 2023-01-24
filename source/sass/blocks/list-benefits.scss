@@ -251,6 +251,47 @@
     position: relative;
     z-index: 10;
     max-width: 240px;
+    top: 130px;
+  }
+
+  .list-benefits__item-description::after {
+    left: 115px;
+  }
+
+  .list-benefits__item--nature::before {
+    top: 18px;
+  }
+
+  .list-benefits__item--nature::after {
+    top: 44px;
+  }
+
+  .list-benefits__item--meal::before {
+    top: 18px;
+    left: 0px;
+  }
+
+  .list-benefits__item--meal::after {
+    top: 45px;
+    left: 29px;
+  }
+
+  .list-benefits__item--tool::before {
+    top: 18px;
+  }
+
+  .list-benefits__item--tool::after {
+    top: 43px;
+  }
+
+  .list-benefits__item--time::before {
+    top: 18px;
+    left: 3px;
+  }
+
+  .list-benefits__item--time::after {
+    top: 43px;
+    left: 31px;
   }
 
 }
