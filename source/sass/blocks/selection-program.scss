@@ -1,6 +1,7 @@
 .selection-program {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .selection-program__wrapper {
@@ -39,12 +40,18 @@
   }
 
   .selection-program__title {
-    border: none
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 37px;
+    padding-top: 62px;
   }
 
   .selection-program__text {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 40px;
+    padding-top: 15px;
   }
 
   .selection-program__wrapper {
@@ -52,6 +59,11 @@
     padding: 0 30px;
     box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  .selection-program__form {
+    padding-left: 40px;
+    padding-top: 30px;
   }
 }
 
@@ -74,5 +86,15 @@
     grid-auto-rows: auto;
     margin-top: 66px;
     margin-bottom: 61px;
+    padding: 0;
+  }
+
+  .selection-program__title {
+    padding-left: 0px;
+    padding-top: 49px;
+  }
+
+  .selection-program__text {
+    padding-left: 0px;
   }
 }

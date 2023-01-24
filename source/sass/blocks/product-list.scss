@@ -10,10 +10,9 @@
 .product-list__item {
   border-bottom: 1px solid #d9d9d9;
   min-height: 190px;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 11px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  padding-top: 17px;
 }
 
 .product-list__item:last-of-type {
@@ -37,6 +36,9 @@
     flex-direction: column;
     position: relative;
     z-index: 10;
+    display: flex;
+    padding-top: 2px;
+    margin-bottom: 60px;
   }
 
   .product-list__item::after {

@@ -54,6 +54,7 @@
   line-height: 18px;
   padding-left: 20px;
   padding-top: 14px;
+  padding-bottom: 13px;
   box-sizing: border-box;
 }
 
@@ -66,11 +67,26 @@
   .form-info__input {
     font-size: 20px;
     line-height: 30px;
+    height: 52px;
   }
 
   .form-info__title--owner {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .form-info__list {
+    gap: 17px;
+    padding-right: 38px;
+  }
+
+  .form-info__item {
+    gap: 15px;
+  }
+
+  .form-info {
+    border-bottom: none;
+    padding-bottom: 72px;
   }
 }
 
@@ -87,6 +103,7 @@
   .form-info__list {
     gap: 20px;
     min-height: 202px;
+    padding: 0;
   }
 
   .form-info__input {

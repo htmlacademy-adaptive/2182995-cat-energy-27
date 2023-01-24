@@ -47,15 +47,12 @@
   .site-list__item--current {
     border-bottom: 2px solid $green;
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item-desktop-index a {
     color: #ffffff;
-}
-
-  .site-list__item--current {
-  border-bottom: 2px solid #000000;
 }
 
   .site-list__item-desktop-index--current {
