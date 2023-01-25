@@ -2,8 +2,16 @@
   width: 100%;
   padding: 0;
   border: none;
-  border-top: 2px solid #68B738;
   margin-bottom: 40px;
+}
+
+.form-additional-info::before {
+  content:"";
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  position: absolute;
+  z-index: -10;
 }
 
 .form-additional-info__title {
@@ -18,6 +26,7 @@
   display: table;
   padding-right: 22px;
   text-transform: none;
+
 }
 
 .form-additional-info__textarea {
@@ -41,6 +50,10 @@
     margin-bottom: 80px;
   }
 
+  .form-additional-info::before {
+    left: 0;
+  }
+
   .form-additional-info__textarea {
     font-size: 20px;
     line-height: 30px;
@@ -52,6 +65,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 60px;
+
   }
 }
 
@@ -61,7 +75,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-bottom: 85px;
+    margin-bottom: 93px;
   }
 
   .form-additional-info__textarea {

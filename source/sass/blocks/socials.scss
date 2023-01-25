@@ -75,7 +75,7 @@
 
   .socials {
     width: 100%;
-    background-color: rgb(217, 217, 217);
+    background-color: #f2f2f2;
   }
 
   .socials__list {
@@ -83,11 +83,13 @@
     margin: 0;
     padding-top: 10px;
     padding-right: 27px;
+    border-bottom: none;
   }
 
   .socials__logo {
     width: 143px;
     height: 26px;
+    border-bottom: none;
   }
 
   .socials__icon {

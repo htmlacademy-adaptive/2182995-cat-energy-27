@@ -94,11 +94,12 @@
 @media (min-width: $desktop-width) {
   .case__example {
     max-width: 436px;
-    margin-top: 29px;
+    margin-top: 53px;
   }
 
   .case {
     background-color: #f2f2f2;
+    padding-bottom: 0;
   }
 
   .case__wrapper {
@@ -108,7 +109,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-top: 199px;
+    margin-top: 160px;
     min-height: 462px;
   }
 
@@ -140,7 +141,7 @@
   .case__slider {
     margin: 0;
     position: absolute;
-    top: -118px;
+    top: -92px;
     left: -11px;
   }
 

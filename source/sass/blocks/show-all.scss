@@ -20,7 +20,7 @@
   margin-bottom: 23px;
 }
 
-.show-all__wrapper {
+.show-all-wrapper {
   position: relative;
   width: 280px;
   margin-top: -29px;
@@ -28,7 +28,7 @@
 
 .show-all__title::before {
   content: "";
-  background-color: rgb(211, 211, 211) ;
+  background-color: rgb(211, 211, 211);
   width: 30px;
   height: 2px;
   position: absolute;
@@ -39,7 +39,7 @@
 
 .show-all__title::after {
   content: "";
-  background-color: rgb(211, 211, 211) ;
+  background-color: rgb(211, 211, 211);
   width: 30px;
   height: 2px;
   position: absolute;
@@ -49,8 +49,13 @@
 }
 
 .show-all__button {
+  margin: 0 auto;
   margin-bottom: 25px;
   text-transform: uppercase;
+  width: 167px;
+  min-height: 40px;
+  display: block;
+  text-decoration: none;
 }
 
 .show-all__button-name:active {
@@ -58,7 +63,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .show-all__wrapper {
+  .show-all-wrapper {
     top: 136px;
   }
 
@@ -88,19 +93,20 @@
 
   .show-all__title::after {
     width: 60px;
-    bottom: 350px;
+    bottom: 325px;
     left: 133px;
   }
 
-  .show-all__wrapper::after {
+  .show-all-wrapper::after {
     content: "";
     background-color: #FFFFFF ;
-    width: 328px;
-    height: 430px;
+    width: 324px;
+    min-height: 430px;
     z-index: -9;
     position: absolute;
-    top: -28px;
+    top: -41px;
     left: -1px;
+    border: 1px solid #F2F2F2;
   }
 
   .show-all__button {
@@ -110,11 +116,39 @@
     margin-top: 70px;
     margin-bottom: 38px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .show-all__button {
     width: 169px;
+    margin-top: 95px;
+  }
+
+  .show-all-wrapper {
+    top: 124px;
+    left: -21px;
+    width: 245px;
+  }
+
+  .show-all__title {
+    padding-left: 56px;
+  }
+
+  .show-all__text {
+    padding-left: 41px;
+  }
+
+  .show-all-wrapper::after {
+    width: 245px;
+  }
+
+  .show-all__title::before {
+    left: 91px;
+    top: -31px;
+  }
+
+  .show-all__title::after {
+    left: 91px;
+    bottom: 350px;
   }
 }

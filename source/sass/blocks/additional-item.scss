@@ -66,18 +66,24 @@
 
 @media (min-width: $desktop-width) {
   .additional-item--name {
-    padding-top: 25px;
+    padding-top: 57px;
     padding-bottom: 25px;
   }
 
   .additional-item--price {
     padding-right: 40px;
+    padding-top: 40px;
   }
 
   .additional-item a {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
+  }
+
+  .additional-item--mass {
+    padding-top: 42px;
+    padding-right: 64px;
   }
 
 }

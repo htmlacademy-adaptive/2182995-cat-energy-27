@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +10,6 @@
   <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../img/favicons/apple-icon-180x180.png">
 </head>
-
 <body class="page__body">
   <div class="page__container">
   <header class="main-header">
@@ -77,35 +75,34 @@
             <legend class="visually-hidden">Цель</legend>
             <ul class="form-radio__list">
               <li class="form-radio__item">
-                <label class="form-radio__control">
-                <input class="visually-hidden form-radio__control-input" type="radio" name="goal" checked>
+                <label class="form-radio__control" for="goal__less">
+                <input class="visually-hidden form-radio__control-input" type="radio" name="goal" id="goal__less" checked>
                 <span class="form-radio__control-mark"></span>
                 <span class="form-radio__control-label">Похудение</span>
                   </label>
               </li>
               <li class="form-radio__item">
-                <label class="form-radio__control">
-                  <input class="visually-hidden form-radio__control-input" type="radio" name="goal" >
+                <label class="form-radio__control" for="goal__plus">
+                  <input class="visually-hidden form-radio__control-input" type="radio" name="goal" id="goal__plus" >
                   <span class="form-radio__control-mark"></span>
                   <span class="form-radio__control-label">Набор массы</span>
                     </label>
               </li>
               <li class="form-radio__item">
-                <label class="form-radio__control">
-                  <input class="visually-hidden form-radio__control-input" type="radio" name="goal" >
+                <label class="form-radio__control" for="goal_indefinite">
+                  <input class="visually-hidden form-radio__control-input" type="radio" name="goal" id="goal_indefinite" >
                   <span class="form-radio__control-mark"></span>
                   <span class="form-radio__control-label">Не знаю (нужен ваш совет)</span>
                    </label>
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="form-contact-info">
             <legend class="visually-hidden">Контактные данные владельца</legend>
-            <p class="form-contact-info__title form-info__title--owner">Контактные данные (владельца кота)<p>
+            <p class="form-contact-info__title form-contact-info__title--owner">Контактные данные (владельца кота)<p>
             <ul class="form-contact-info__list">
               <li class="form-contact-info__item form-contact-info__item--email">
-                <label class="form-contact-info__label">E-mail:*</label>
+                <label class="form-contact-info__label" for="email_form">E-mail:*</label>
                 <div class="form-contact-info__email-wrapper">
                 <input class="form-contact-info__input" type="email" name="email" id="email_form" value="kuklachev@gmail.com"
                   required="">
@@ -115,7 +112,7 @@
                 </div>
               </li>
               <li class="form-contact-info__item form-contact-info__item--tel">
-                <label class="form-contact-info__label">ТЕЛЕФОН*</label>
+                <label class="form-contact-info__label" for="phone_form">ТЕЛЕФОН*</label>
                 <div class="form-contact-info__tel-wrapper">
                 <input class="form-contact-info__input" type="tel" name="phone" id="phone_form" value="8 (960) 900-60-90"
                   required="">
@@ -125,16 +122,13 @@
                 </div>
               </li>
             </ul>
-
           </fieldset>
-
           <fieldset class="form-additional-info">
             <legend class="visually-hidden">Дополнительная информация</legend>
             <p class="form-additional-info__title">Комментарий</p>
             <textarea class="form-additional-info__textarea" name="text"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
-
           <fieldset class="form-checkbox">
           <legend class="visually-hidden">Дополнительные товары</legend>
           <p class="form-checkbox__title">Дополнительно</p>
@@ -160,6 +154,7 @@
                       <span class="form-checkbox__control-label">Молоко</span>
                      </label>
                   </li>
+                  <li>
                   <label class="form-checkbox__label">
                     <input class="visually-hidden form-checkbox__input" type="checkbox" name="eat">
                     <span class="form-checkbox__control-mark"></span>
@@ -233,8 +228,9 @@
         </a>
       </div>
     </div>
-  </section>
+    </section>
   </footer>
+  </div>
   <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
