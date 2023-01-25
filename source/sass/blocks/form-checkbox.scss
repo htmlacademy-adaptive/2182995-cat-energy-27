@@ -1,0 +1,130 @@
+.form-checkbox {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.form-checkbox::before {
+  content:"";
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  position: absolute;
+  z-index: -10;
+
+}
+
+.form-checkbox__title {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-top: -18px;
+  background-color: #FFFFFF;
+  display: table;
+  padding-right: 23px;
+  padding-bottom: 34px;
+
+}
+
+.form-checkbox__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-checkbox__label {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form-checkbox__control-label {
+  padding-left: 46px;
+}
+
+.form-checkbox__item {
+  margin-bottom: 24px;
+}
+
+.form-checkbox__control-mark {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border: 1px solid #CDCDCD;
+}
+
+.form-checkbox__input[type="checkbox"]:checked + .form-checkbox__control-mark {
+  background-image: url(../img/checkbox.svg);
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 533px;
+    min-height: 150px;
+    margin-top: 22px;
+    grid-column-gap: 136px;
+  }
+
+  .form-checkbox__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-checkbox::before {
+    left: 0px;
+  }
+
+  .form-checkbox__input[type="checkbox"]:checked + .form-checkbox__control-mark {
+    background-size: 26px 26px;
+  }
+
+  .form-checkbox__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-checkbox__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .form-checkbox__list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 22px;
+    min-height: 40px;
+  }
+
+  .form-checkbox__item {
+    margin: 0;
+  }
+
+  .form-checkbox__control-label {
+    padding-left: 60px;
+  }
+}

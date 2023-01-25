@@ -1,0 +1,125 @@
+.form-radio {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.form-radio__control {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.form-radio__control-mark + span {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 14px;
+}
+
+.form-radio__control-mark {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+  position: relative;
+}
+
+.form-radio__control-input[type="radio"]:checked + .form-radio__control-mark::before {
+  background-color: #68B738;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+  content: "";
+}
+
+.form-radio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-radio__label {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-radio {
+    margin-bottom: 97px;
+  }
+
+  .form-radio__control-mark + span::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-radio__control {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 28px;
+    padding-top: 5px;
+    gap: 5px;
+  }
+
+  .form-radio__list {
+    gap: 7px;
+  }
+
+  .form-radio__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-radio__control-input[type="radio"]:checked + .form-radio__control-mark::before {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-radio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 568px;
+    min-height: 200px;
+    margin-left: 80px;
+    padding: 0;
+    border: 1px solid #E7E7E7;
+    margin-bottom: 40px;
+  }
+
+  .form-radio__list {
+    padding-left: 0px;
+    padding-top: 19px;
+  }
+
+  .form-radio__label {
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+  }
+}

@@ -1,0 +1,154 @@
+
+.show-all__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  margin-top: 82px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.show-all__text {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-main;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.show-all-wrapper {
+  position: relative;
+  width: 280px;
+  margin-top: -29px;
+}
+
+.show-all__title::before {
+  content: "";
+  background-color: rgb(211, 211, 211);
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  left: 122px;
+  top: 45px;
+}
+
+
+.show-all__title::after {
+  content: "";
+  background-color: rgb(211, 211, 211);
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 172px;
+  left: 122px;
+}
+
+.show-all__button {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  width: 167px;
+  min-height: 40px;
+  display: block;
+  text-decoration: none;
+}
+
+.show-all__button-name:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .show-all-wrapper {
+    top: 136px;
+  }
+
+  .show-all__title {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 96px;
+    padding-right: 94px;
+    margin-top: 124px;
+  }
+
+  .show-all__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    padding-left: 77px;
+    margin-top: 23px;
+  }
+
+  .show-all__title::before {
+    width: 60px;
+    top: 46px;
+    left: 132px;
+  }
+
+  .show-all__title::after {
+    width: 60px;
+    bottom: 325px;
+    left: 133px;
+  }
+
+  .show-all-wrapper::after {
+    content: "";
+    background-color: #FFFFFF ;
+    width: 324px;
+    min-height: 430px;
+    z-index: -9;
+    position: absolute;
+    top: -41px;
+    left: -1px;
+    border: 1px solid #F2F2F2;
+  }
+
+  .show-all__button {
+    width: 249px;
+    height: 40px;
+    margin-left: 38px;
+    margin-top: 70px;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-all__button {
+    width: 169px;
+    margin-top: 95px;
+  }
+
+  .show-all-wrapper {
+    top: 124px;
+    left: -21px;
+    width: 245px;
+  }
+
+  .show-all__title {
+    padding-left: 56px;
+  }
+
+  .show-all__text {
+    padding-left: 41px;
+  }
+
+  .show-all-wrapper::after {
+    width: 245px;
+  }
+
+  .show-all__title::before {
+    left: 91px;
+    top: -31px;
+  }
+
+  .show-all__title::after {
+    left: 91px;
+    bottom: 350px;
+  }
+}

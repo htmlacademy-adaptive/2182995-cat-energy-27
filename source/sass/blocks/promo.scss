@@ -1,0 +1,219 @@
+.promo {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+}
+
+.promo__button-name:active {
+  opacity: 0.3;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
+  background-position: top;
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
+  width: 100%;
+  height: 302px;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/promo-cat@2x.jpg");
+  }
+}
+
+.promo__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.promo__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  margin: 0;
+  padding: 26px 15px;
+  text-align: center;
+}
+
+.promo__slogan {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 42px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  padding-top: 29px;
+  padding-bottom: 5px;
+}
+
+.promo__wrapper a {
+  text-decoration: none;
+}
+
+.promo__button {
+  padding: 8px 73px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-height: 870px;
+  }
+
+  .promo::before {
+    content: "";
+    position: absolute;
+    background-image: none;
+    width: 768px;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .promo__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__image {
+    width: 709px;
+    height: 609px;
+    margin-top: -80px;
+    order: 4;
+    z-index: -1;
+    position: absolute;
+    top: 311px;
+  }
+
+  .promo__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding-left: 90px;
+    text-align: start;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .promo__slogan {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 90px;
+    text-align: start;
+  }
+
+  .promo__button {
+    z-index: 10;
+    width: 244px;
+    height: 54px;
+    order: 3;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 14px 26px;
+    margin-left: 90px;
+    margin-top: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 100%;
+    min-height: 480px;
+    background-repeat: no-repeat, no-repeat;
+    margin: 0 auto;
+    position: inherit;
+    margin-top: 79px;
+  }
+
+  .promo::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/index-desktop.webp");
+    background-position: top;
+    background-size: cover, contain;
+    background-repeat: no-repeat, no-repeat;
+    width: 720px;
+    height: 694px;
+    z-index: -1;
+    top: 0;
+    margin: 0;
+    left: 50%;
+    display: block;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgb(104, 183, 56, 0.85), rgb(104, 183, 56, 0.85)), url("../img/index-desktop@2x.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    width: 1330px;
+    padding: 0 55px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 40px;
+  }
+
+  .promo__image {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: -24px;
+    right: 277px;
+  }
+
+
+  .promo__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding: 0;
+    padding-left: 80px;
+    max-width: 416px;
+  }
+
+  .promo__slogan {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 80px;
+  }
+
+  .promo__button {
+    z-index: 10;
+    margin-left: 80px;
+    margin-top: -23px;
+  }
+}

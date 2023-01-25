@@ -1,0 +1,48 @@
+.button-secondary {
+  background-color: rgb(104, 183, 56);
+  color: #ffffff;
+  width: 280px;
+  min-height: 40px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button-secondary:hover {
+  background-color: #5EAA2F;
+}
+
+.button-secondary:active {
+  background: #5EAA2F;
+}
+
+
+.button-secondary--grey {
+  background-color: rgb(242, 242, 242);
+  color: $grey-main;
+  width: 280px;
+  min-height: 40px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-secondary--grey:hover {
+  background-color: #EBEBEB;
+}
+
+.button-secondary--grey:active {
+  background-color: #EBEBEB;
+}

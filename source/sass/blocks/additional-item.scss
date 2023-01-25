@@ -1,0 +1,89 @@
+.additional-item--name {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+
+.additional-item--mass{
+  grid-column-start: 1;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.additional-item--mass,
+.additional-item--price {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $grey-main;
+}
+
+@media (min-width: $tablet-width) {
+
+  .additional-item a {
+    text-decoration: none;
+  }
+
+  .additional-item--name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .additional-item--mass {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .additional-item--price {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item--name {
+    padding-top: 57px;
+    padding-bottom: 25px;
+  }
+
+  .additional-item--price {
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+
+  .additional-item a {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+
+  .additional-item--mass {
+    padding-top: 42px;
+    padding-right: 64px;
+  }
+
+}

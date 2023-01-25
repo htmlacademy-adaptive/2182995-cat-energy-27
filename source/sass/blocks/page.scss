@@ -1,0 +1,30 @@
+.page__body {
+  @include main-text;
+  background-color: rgb (255, 255, 255);
+  margin: 0;
+}
+
+.page__container {
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    @include main-text;
+  }
+
+  .page__container {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    @include main-text;
+    margin: 0 auto;
+  }
+
+  .page__container {
+    box-sizing: border-box;
+  }
+}
