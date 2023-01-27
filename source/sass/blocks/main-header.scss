@@ -9,9 +9,8 @@
   padding: 0 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr;
   grid-auto-rows: minmax(24px, auto);
-  gap: 60px;
   min-height: 66px;
 }
 
@@ -25,9 +24,10 @@
   top: 24px;
   z-index: 2;
   padding: 0;
-  background-color: #FFFFFF;
-  margin-left: 50px;
+  background-color: $white;
+  right: 113px;
 }
+
 
 .main-header__caption {
   width: 101px;

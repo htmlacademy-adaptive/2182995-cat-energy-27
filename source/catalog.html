@@ -9,6 +9,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../img/favicons/apple-icon-180x180.png">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
 </head>
 <body class="page__body">
   <div class="page__container">
@@ -21,8 +25,8 @@
       <img class="main-header__logo" src="img/logo.svg" alt="логотип" width="33" height="37">
     </picture>
     </a>
-    <nav class="main-nav main-nav--nojs">
-        <ul class="main-nav__list main-nav__list--closed site-list">
+    <nav class="main-nav main-nav--nojs main-nav--closed">
+      <ul class="main-nav__list site-list">
           <li class="site-list__item ">
             <a href="index.html">
               Главная
@@ -52,6 +56,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product1.webp, img/product1@2x.webp 2x">
+              <source type="image/webp" srcset="img/product1-mobile.webp img/product1-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product1.png, img/product1@2x.png 2x">
             <img class="main-products__image-small" src="img/product1-mobile.png" srcset="img/product1-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
@@ -71,6 +77,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product2.webp, img/product2@2x.webp 2x">
+              <source type="image/webp" srcset="img/product2-mobile.webp img/product2-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product2.png, img/product2@2x.png 2x">
             <img class="main-products__image" src="img/product2-mobile.png" srcset="img/product2-mobile@2x.png 2x" width="84" height="100"
               alt="Cat Energy PRO 500 г">
@@ -90,6 +98,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product3.webp, img/product3@2x.webp 2x">
+              <source type="image/webp" srcset="img/product3-mobile.webp img/product3-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product3.png, img/product3@2x.png 2x">
             <img class="main-products__image-small" src="img/product3-mobile.png" srcset="img/product3-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
@@ -109,6 +119,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product4.webp, img/product4@2x.webp 2x">
+              <source type="image/webp" srcset="img/product4-mobile.webp img/product4-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product4.png, img/product4@2x.png 2x">
             <img class="main-products__image" src="img/product4-mobile.png" srcset="img/product4-mobile@2x.png 2x" width="84" height="100"
               alt="Cat Energy PRO 500 г">
@@ -128,6 +140,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product5.webp, img/product5@2x.webp 2x">
+              <source type="image/webp" srcset="img/product5-mobile.webp img/product5-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product5.png, img/product5@2x.png 2x">
             <img class="main-products__image-small" src="img/product5-mobile.png" srcset="img/product5-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
@@ -147,6 +161,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product6.webp, img/product6@2x.webp 2x">
+              <source type="image/webp" srcset="img/product6-mobile.webp img/product6-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product6.png, img/product6@2x.png 2x">
             <img class="main-products__image" src="img/product6-mobile.png" srcset="img/product6-mobile@2x.png 2x" width="84" height="100"
               alt="Cat Energy PRO 500 г">
@@ -166,6 +182,8 @@
         <li class="product-list__item main-products">
           <a class="main-products__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/product7.webp, img/product7@2x.webp 2x">
+              <source type="image/webp" srcset="img/product7-mobile.webp img/product7-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/product7.png, img/product7@2x.png 2x">
             <img class="main-products__image-small" src="img/product7-mobile.png" srcset="img/product7-mobile@2x.png 2x" width="68" height="86"
               alt="Cat Energy PRO 500 г">
@@ -182,7 +200,7 @@
           </div>
           <a href="#" class="main-products__button button-secondary">ЗАКАЗАТЬ</a>
         </li>
-        <li class="product-list__item main-products">
+        <li class="product-list__item main-products show-all">
           <div class="show-all-wrapper">
             <h2 class="show-all__title">Показать еще 100500 товаров</h2>
             <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
@@ -245,11 +263,16 @@
     <address class="collaboration__address">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
   </div>
   </section>
-    <iframe class="footer__map"
+  <a class="footer__map-link" href="#">
+    <picture>
+    <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+    <img class="footer__map-image" src="/img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="768" height="400">
+  </picture>
+    <iframe class="footer__map-inter"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619335193877!2d30.32197451414531!3d59.93845850496381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669480901189!5m2!1sru!2sru"
       width="480" height="543" style="border: 0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <section class="socials">
+    </a>
     <div class="socials__wrapper">
     <a class="socials__link-logo" href="index.html">
       <svg class="socials__logo" width="128" height="24">

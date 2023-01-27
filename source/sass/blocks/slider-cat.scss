@@ -4,20 +4,20 @@
 }
 
 .slider-cat__toggle {
-  fill: #666666;
-  stroke: #666666;
+  fill: $grey-light;
+  stroke: $grey-light;
   position: relative;
   cursor: pointer;
 }
 
 .slider-cat__toggle:hover {
-  fill: #68B738;
-  stroke: #68B738;
+  fill: $green;
+  stroke: $green;
 }
 
 .slider-cat__toggle:active {
-  fill: #5EAA2F;
-  stroke: #5EAA2F;
+  fill: $green-bright;
+  stroke: $green-bright;
 }
 
 .slider-cat__toggle-arrows {
@@ -35,6 +35,7 @@
 @media (min-width: $tablet-width) {
   .slider-cat {
     padding-left: 72px;
+
   }
 
   .slider-cat__image-before {

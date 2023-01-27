@@ -5,7 +5,7 @@
 
 .additional-list__item {
   padding-bottom: 16px;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid $soft-grey;
   display: grid;
   grid-template-columns: 117px 37px;
   grid-column-gap: 127px;
@@ -30,10 +30,10 @@
   .additional-list__item {
     min-width: 895px;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     padding: 5px 0 5px 0;
-    border-bottom: 1px solid #dcdcdc;
-    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid $soft-grey;
+    border-top: 1px solid $soft-grey;
     padding: 0;
     align-items: center;
     grid-auto-rows: 36px;

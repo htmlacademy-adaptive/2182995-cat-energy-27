@@ -16,11 +16,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $black;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 37px;
-  border-top: 1px solid #DCDCDC;
+  border-top: 1px solid $soft-grey;
 }
 
 .selection-program__text {
@@ -28,7 +28,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
   margin: 0;
   text-transform: uppercase;
 }
@@ -90,11 +90,11 @@
   }
 
   .selection-program__title {
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 49px;
   }
 
   .selection-program__text {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }

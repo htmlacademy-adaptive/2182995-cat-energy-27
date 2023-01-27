@@ -4,7 +4,7 @@
   margin: 0;
   padding-top: 22px;
   padding-bottom: 19px;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid $soft-grey;
 }
 
 .form-radio__control {
@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #222222;
+  color: $black-additional;
   text-transform: uppercase;
   display: flex;
 }
@@ -34,7 +34,7 @@
 }
 
 .form-radio__control-input[type="radio"]:checked + .form-radio__control-mark::before {
-  background-color: #68B738;
+  background-color: $green;
   position: absolute;
   top: 8px;
   left: 8px;
@@ -59,7 +59,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #222222;
+  color: $black-additional;
   text-transform: uppercase;
 }
 
@@ -120,6 +120,6 @@
   .form-radio__label {
     font-size: 20px;
     line-height: 30px;
-    color: #222222;
+    color: $black-additional;
   }
 }

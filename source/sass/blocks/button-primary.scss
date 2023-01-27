@@ -1,6 +1,6 @@
 .button-primary {
   background-color: rgb(104, 183, 56);
-  color: #ffffff;
+  color: $white;
   width: 280px;
   min-height: 40px;
   font-family: $oswald, sans-serif;
@@ -15,9 +15,9 @@
 }
 
 .button-primary:hover {
-  background-color: #5EAA2F;
+  background-color: $green-bright;
 }
 
 .button-primary:active {
-  background: #5EAA2F;
+  background: $green-bright;
 }

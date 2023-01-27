@@ -99,7 +99,7 @@
 
   .show-all-wrapper::after {
     content: "";
-    background-color: #FFFFFF ;
+    background-color: $white ;
     width: 324px;
     min-height: 430px;
     z-index: -9;
@@ -121,7 +121,8 @@
 @media (min-width: $desktop-width) {
   .show-all__button {
     width: 169px;
-    margin-top: 95px;
+    margin-top: 89px;
+    margin-left: 59px;
   }
 
   .show-all-wrapper {
@@ -131,24 +132,28 @@
   }
 
   .show-all__title {
-    padding-left: 56px;
+    padding-left: 76px;
+    margin-top: 128px;
   }
 
   .show-all__text {
-    padding-left: 41px;
+    padding-left: 58px;
   }
 
   .show-all-wrapper::after {
     width: 245px;
+    top: -31px;
+    left: 19px;
+    border: 2px solid #f2f2f2;
   }
 
   .show-all__title::before {
-    left: 91px;
-    top: -31px;
+    left: 113px;
+    top: 50px;
   }
 
   .show-all__title::after {
-    left: 91px;
+    left: 114px;
     bottom: 350px;
   }
 }

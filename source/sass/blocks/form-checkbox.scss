@@ -9,7 +9,7 @@
   content:"";
   width: 100%;
   height: 2px;
-  background-color: #68b738;
+  background-color: $green;
   position: absolute;
   z-index: -10;
 
@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
   margin: 0;
   margin-top: -18px;
   background-color: #FFFFFF;
@@ -42,7 +42,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -113,11 +113,14 @@
   }
 
   .form-checkbox__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
     width: 100%;
     margin: 0;
     margin-top: 22px;
     min-height: 40px;
+    grid-column-gap: 0;
+    grid-row-gap: 25px;
   }
 
   .form-checkbox__item {
@@ -126,5 +129,9 @@
 
   .form-checkbox__control-label {
     padding-left: 60px;
+  }
+
+  .form-checkbox__title {
+    margin-top: -27px;
   }
 }
