@@ -1,6 +1,6 @@
 .main-catalog {
   width: 100%;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $basic-grey;
 }
 
 .main-catalog__wrapper {
@@ -11,8 +11,8 @@
 }
 
 .main-catalog__list {
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
   margin-bottom: 41px;
 }
 

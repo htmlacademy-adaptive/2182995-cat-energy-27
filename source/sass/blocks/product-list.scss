@@ -7,7 +7,7 @@
 }
 
 .product-list__item {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $basic-grey;
   min-height: 190px;
   display: grid;
   grid-template-columns: 140px 140px;

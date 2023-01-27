@@ -16,7 +16,7 @@
 }
 
 .collaboration--index {
-  background-color: #ffffff;
+  background-color: $white;
   width: 100%;
 }
 
@@ -74,10 +74,21 @@
 @media (min-width: $desktop-width) {
   .collaboration__wrapper {
     width: 565px;
-    padding: 56px 60px 56px 80px;
+    padding: 56px 60px 56px 37px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .collaboration__address {
+    text-align: start;
+    padding-right: 20px;
+    max-width: 155px;
+  }
+
+  .collaboration--index {
+    position: absolute;
+    top: 62px;
   }
 }

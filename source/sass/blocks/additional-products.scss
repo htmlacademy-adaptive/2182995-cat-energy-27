@@ -9,7 +9,7 @@
   content:"";
   width: 100%;
   height: 2px;
-  background-color: #68b738;
+  background-color: $green;
   position: absolute;
   z-index: -10;
 }
@@ -23,7 +23,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
   position: relative;
   margin: 0;
   margin-top: -21px;
@@ -49,7 +49,7 @@
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   font-family: $lato;
   font-weight: 400;
   font-size: 16px;
@@ -198,6 +198,6 @@
 
   .additional-products__gift-slogan::before {
     left: 47px;
-    top: -254%;
+    top: -211%;
   }
 }

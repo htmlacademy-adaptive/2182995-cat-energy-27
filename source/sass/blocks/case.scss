@@ -17,7 +17,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
   margin: 0;
   padding-top: 25px;
 }
@@ -43,9 +43,21 @@
 @media (min-width: $tablet-width) {
   .case {
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: transparent;
     padding-bottom: 96px;
+    position: relative;
   }
+
+  .case::after {
+    content: "";
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 462px;
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+  }
+
 
   .case__wrapper {
     width: 768px;
@@ -53,12 +65,13 @@
     padding: 0 30px;
   }
 
+
   .case__title {
     font-family: $oswald;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: $black;
     padding-top: 51px;
     padding-bottom: 23px;
   }
@@ -98,8 +111,11 @@
   }
 
   .case {
-    background-color: #f2f2f2;
     padding-bottom: 0;
+  }
+
+  .case::after {
+    height: 491px;
   }
 
   .case__wrapper {
@@ -118,7 +134,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: $black;
     position: absolute;
     top: -160px;
   }

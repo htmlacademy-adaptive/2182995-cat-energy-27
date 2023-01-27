@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: $black;
   padding-top: 4px;
 
   @include center;
@@ -87,12 +87,12 @@
     line-height: 37px;
     text-align: center;
     margin: 0;
-    color: #000000;
+    color: $black;
     text-transform: uppercase;
   }
 
   .stat__title {
-    background-color: #ffffff;
+    background-color: $white;
     margin-bottom: -5px;
     max-width: 110px;
   }

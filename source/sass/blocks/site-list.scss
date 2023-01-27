@@ -4,7 +4,7 @@
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
-  color: #000000;
+  color: $black;
   padding-top: 22px;
   padding-bottom: 24px;
   text-align: center;
@@ -16,7 +16,7 @@
 
 .site-list__item a {
   text-decoration: none;
-  color: #000000;
+  color: $black;
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -36,7 +36,7 @@
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
-    color: #000000;
+    color: $black;
     padding: 0;
     border: none;
     width: auto;
@@ -52,11 +52,11 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item-desktop-index a {
-    color: #ffffff;
+    color: $white;
 }
 
   .site-list__item-desktop-index--current {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $white;
 }
 
   .site-list__item {

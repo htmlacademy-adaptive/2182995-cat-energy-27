@@ -11,7 +11,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: $black;
     padding-top: 14px;
   }
 }
@@ -58,6 +58,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
+    color: $black;
+    padding-top: 0;
   }
 }

@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $black-additional;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 13px;
@@ -83,7 +83,7 @@
 
   .additional-item--mass {
     padding-top: 42px;
-    padding-right: 64px;
+    text-align: start;
   }
 
 }

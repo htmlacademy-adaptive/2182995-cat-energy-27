@@ -23,7 +23,7 @@
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #68B738;
+  background-color: $green;
   position: absolute;
 }
 
@@ -38,7 +38,7 @@
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #68B738;
+  background-color: $green;
   position: absolute;
 }
 
@@ -53,7 +53,7 @@
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #68B738;
+  background-color: $green;
   position: absolute;
 }
 
@@ -69,7 +69,7 @@
   content: "";
   width: 60px;
   height: 60px;
-  background-color: #68B738;
+  background-color: $green;
   position: absolute;
 }
 
@@ -102,12 +102,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #444444;
-    position: relative;
-    z-index: 10;
-    top: 145px;
-    padding: 0;
-    max-width: 245px;
+    color: $grey-main;
+    padding-top: 151px;
+    padding-left: 0;
+    // position: relative;
+    // z-index: 10;
+    // top: 145px;
+    // padding: 0;
+    // max-width: 245px;
   }
 
   .list-benefits__item--nature {
@@ -124,13 +126,13 @@
     position: absolute;
     left: 140px;
     z-index: -10;
-    top: -145px;
+    top: -8px;
   }
 
   .list-benefits__item--nature::before {
     width: 80px;
     height: 80px;
-    background-color: #68B738;
+    background-color: $green;
     top: 34px;
   }
 
@@ -150,7 +152,7 @@
   .list-benefits__item--meal::before {
     width: 80px;
     height: 80px;
-    background-color: #68B738;
+    background-color: $green;
     top: 34px;
     left: 20px;
   }
@@ -175,7 +177,7 @@
   .list-benefits__item--tool::before {
     width: 80px;
     height: 80px;
-    background-color: #68B738;
+    background-color: $green;
     top: 48px;
   }
 
@@ -199,7 +201,7 @@
   .list-benefits__item--time::before {
     width: 80px;
     height: 80px;
-    background-color: #68B738;
+    background-color: $green;
     top: 49px;
     left: 22px;
   }
@@ -226,6 +228,7 @@
 @media (min-width: $desktop-width) {
   .list-benefits {
     gap: 0;
+    margin-top: 54px;
   }
 
   .list-benefits__item {
@@ -247,11 +250,9 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #444444;
-    position: relative;
+    color: $grey-main;
     z-index: 10;
     max-width: 240px;
-    top: 130px;
   }
 
   .list-benefits__item-description::after {

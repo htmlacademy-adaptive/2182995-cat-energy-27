@@ -1,6 +1,6 @@
 .button-secondary {
   background-color: rgb(104, 183, 56);
-  color: #ffffff;
+  color: $white;
   width: 280px;
   min-height: 40px;
   font-family: $oswald;
@@ -13,14 +13,15 @@
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .button-secondary:hover {
-  background-color: #5EAA2F;
+  background-color: $green-bright;
 }
 
 .button-secondary:active {
-  background: #5EAA2F;
+  background: $green-bright;
 }
 
 
