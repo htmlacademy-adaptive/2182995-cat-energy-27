@@ -23,13 +23,26 @@
   padding-left: 14px;
 }
 
+.form-radio__control:hover {
+  outline: none;
+  border: none;
+}
+
+.form-radio__control:disabled {
+  opacity: 0.3;
+}
+
+.form-radio__control:hover > span {
+  border: 1px solid rgb(186, 186, 186);
+}
+
 .form-radio__control-mark {
   content: "";
   display: inline-block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #CDCDCD;
+  border: 1px solid rgb(205, 205, 205);
   position: relative;
 }
 
@@ -41,7 +54,7 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  border: 1px solid #CDCDCD;
+  border: 1px solid rgb(205, 205, 205);
   content: "";
 }
 
@@ -108,12 +121,12 @@
     min-height: 200px;
     margin-left: 80px;
     padding: 0;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
     margin-bottom: 40px;
   }
 
   .form-radio__list {
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 19px;
   }
 

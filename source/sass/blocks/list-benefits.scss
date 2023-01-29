@@ -28,7 +28,7 @@
 }
 
 .list-benefits__item--nature::after {
-  content: url(../img/icon-leaf.svg);
+  content: url("../img/icon-leaf.svg");
   position: absolute;
   top: 15px;
   left: 15px;
@@ -43,7 +43,7 @@
 }
 
 .list-benefits__item--meal::after {
-  content: url(../img/meal.svg);
+  content: url("../img/meal.svg");
   position: absolute;
   top: 15px;
   left: 15px;
@@ -58,7 +58,7 @@
 }
 
 .list-benefits__item--tool::after {
-  content: url(../img/icon-eat.svg);
+  content: url("../img/icon-eat.svg");
   position: absolute;
   top: 15px;
   left: 15px;
@@ -74,7 +74,7 @@
 }
 
 .list-benefits__item--time::after {
-  content: url(../img/tool.svg);
+  content: url("../img/tool.svg");
   position: absolute;
   top: 15px;
   left: 15px;
@@ -85,6 +85,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     counter-reset: features 0;
+    gap: 0;
   }
 
   .list-benefits__item {
@@ -105,11 +106,6 @@
     color: $grey-main;
     padding-top: 151px;
     padding-left: 0;
-    // position: relative;
-    // z-index: 10;
-    // top: 145px;
-    // padding: 0;
-    // max-width: 245px;
   }
 
   .list-benefits__item--nature {
@@ -124,9 +120,9 @@
     line-height: 280px;
     color: rgb(242, 242, 242);
     position: absolute;
-    left: 140px;
+    left: 125px;
     z-index: -10;
-    top: -8px;
+    top: 0;
   }
 
   .list-benefits__item--nature::before {
@@ -269,7 +265,7 @@
 
   .list-benefits__item--meal::before {
     top: 18px;
-    left: 0px;
+    left: 0;
   }
 
   .list-benefits__item--meal::after {
@@ -294,5 +290,4 @@
     top: 43px;
     left: 31px;
   }
-
 }

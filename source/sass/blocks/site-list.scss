@@ -47,21 +47,20 @@
   .site-list__item--current {
     border-bottom: 2px solid $green;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item-desktop-index a {
     color: $white;
-}
+  }
 
   .site-list__item-desktop-index--current {
     border-bottom: 2px solid $white;
-}
+  }
 
   .site-list__item {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 8px;
-}
+  }
 }

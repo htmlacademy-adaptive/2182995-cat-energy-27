@@ -77,16 +77,15 @@
     line-height: 16px;
     width: 251px;
     position: relative;
-    grid-column-gap: 0px;
+    grid-column-gap: 0;
     grid-template-rows: 95px 32px 32px;
     margin-bottom: 32px;
   }
 
   .main-products__item {
-    padding: 0;
     margin: 0;
     padding: 5px 0 9px 0;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid rgb(205, 205, 205);
   }
 
   .main-products__image-link {
@@ -108,7 +107,6 @@
     margin-right: 37px;
     margin-bottom: 39px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -138,5 +136,4 @@
     margin-top: -18px;
     margin-bottom: -8px;
   }
-
 }

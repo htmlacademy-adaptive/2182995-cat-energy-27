@@ -35,7 +35,6 @@
 @media (min-width: $tablet-width) {
   .slider-cat {
     padding-left: 72px;
-
   }
 
   .slider-cat__image-before {
@@ -53,7 +52,7 @@
   }
 
   .slider-cat__toggle-arrows {
-    top:47%;
+    top: 47%;
   }
 
   .slider-cat__toggle-thumb {
@@ -63,11 +62,10 @@
 
 @media (min-width: $desktop-width) {
   .slider-cat__toggle-thumb {
-      top: 46%;
+    top: 46%;
   }
 
   .slider-cat__toggle-arrows {
-    top:48%;
+    top: 48%;
+  }
 }
-}
-

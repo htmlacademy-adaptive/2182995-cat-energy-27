@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $black-light;
   margin-top: 82px;
   text-align: center;
   text-transform: uppercase;
@@ -99,14 +99,14 @@
 
   .show-all-wrapper::after {
     content: "";
-    background-color: $white ;
+    background-color: $white;
     width: 324px;
     min-height: 430px;
     z-index: -9;
     position: absolute;
     top: -41px;
     left: -1px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid rgb(242, 242, 242);
   }
 
   .show-all__button {

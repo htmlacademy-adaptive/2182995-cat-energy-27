@@ -6,13 +6,12 @@
 }
 
 .form-checkbox::before {
-  content:"";
+  content: "";
   width: 100%;
   height: 2px;
   background-color: $green;
   position: absolute;
   z-index: -10;
-
 }
 
 .form-checkbox__title {
@@ -24,11 +23,10 @@
   color: $black;
   margin: 0;
   margin-top: -18px;
-  background-color: #FFFFFF;
+  background-color: $white;
   display: table;
   padding-right: 23px;
   padding-bottom: 34px;
-
 }
 
 .form-checkbox__list {
@@ -44,6 +42,7 @@
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .form-checkbox__control-label {
@@ -58,12 +57,16 @@
   position: absolute;
   width: 26px;
   height: 26px;
-  background: white;
-  border: 1px solid #CDCDCD;
+  background: $white;
+  border: 1px solid #cdcdcd;
+}
+
+.form-checkbox__label:hover > .form-checkbox__control-mark {
+  border: 1px solid rgb(186, 186, 186);
 }
 
 .form-checkbox__input[type="checkbox"]:checked + .form-checkbox__control-mark {
-  background-image: url(../img/checkbox.svg);
+  background-image: url("../img/checkbox.svg");
   background-size: 18px 14px;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +88,7 @@
   }
 
   .form-checkbox::before {
-    left: 0px;
+    left: 0;
   }
 
   .form-checkbox__input[type="checkbox"]:checked + .form-checkbox__control-mark {
