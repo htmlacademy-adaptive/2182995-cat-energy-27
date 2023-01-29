@@ -53,7 +53,7 @@
 }
 
 .preview__title::after {
-  content: url(../img/cat-slim.svg);
+  content: url("../img/cat-slim.svg");
   position: absolute;
   width: 36px;
   height: 50px;
@@ -73,7 +73,7 @@
 }
 
 .preview__title-mass::after {
-  content: url(../img/cat-pro.svg);
+  content: url("../img/cat-pro.svg");
   position: absolute;
   width: 67px;
   height: 28px;
@@ -97,7 +97,7 @@
 }
 
 .preview__link::after {
-  content: url(../img/arrow.svg);
+  content: url("../img/arrow.svg");
   position: absolute;
   right: -40px;
 }
@@ -168,7 +168,7 @@
   }
 
   .preview__title::after {
-    content: url(../img/cat-slim-tablet.svg);
+    content: url("../img/cat-slim-tablet.svg");
     position: absolute;
     width: 140px;
     height: 194px;
@@ -177,7 +177,7 @@
   }
 
   .preview__title-mass::after {
-    content: url(../img/cat-pro-tablet.svg);
+    content: url("../img/cat-pro-tablet.svg");
     position: absolute;
     width: 268px;
     height: 112px;
@@ -257,26 +257,26 @@
   .preview__title::before {
     width: 100px;
     height: 100px;
-    left: 0px;
+    left: 0;
     top: -35px;
   }
 
   .preview__title-mass::before {
     width: 100px;
     height: 100px;
-    left: 0px;
+    left: 0;
     top: -35px;
   }
 
   .preview__title::after {
-    content: url(../img/cat-slim-desktop.svg);
+    content: url("../img/cat-slim-desktop.svg");
     position: absolute;
     left: 15px;
     top: -38px;
   }
 
   .preview__title-mass::after {
-    content: url(../img/cat-pro-desktop.svg);
+    content: url("../img/cat-pro-desktop.svg");
     position: absolute;
     left: -17px;
     top: -15px;

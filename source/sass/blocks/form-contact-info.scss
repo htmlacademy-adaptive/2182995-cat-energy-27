@@ -23,7 +23,6 @@
   background-color: $green;
   position: absolute;
   z-index: -10;
-
 }
 
 .form-contact-info__item {
@@ -34,7 +33,7 @@
 }
 
 .form-contact-info__icon-email {
-  position: absolute ;
+  position: absolute;
   right: 14px;
   top: 13px;
   fill: $white;
@@ -97,13 +96,13 @@
 }
 
 .form-contact-info__input:invalid {
-  border: 2px solid #FF8282;
+  border: 2px solid rgb(255, 130, 130);
 }
 
 .form-contact-info__input:hover,
 .form-contact-info__input:active {
   cursor: pointer;
-  border: 1px solid #CDCDCD;
+  border: 1px solid rgb(205, 205, 205);
 }
 
 .form-contact-info__input:active + svg {
@@ -118,12 +117,12 @@
 
 .form-contact-info__input:focus + svg {
   stroke: $green;
-  fill: #FFFFFF;
+  fill: $white;
 }
 
 .form-contact-info__input:invalid + svg {
-  stroke: #FF8282;
-  fill: #FFFFFF;
+  stroke: rgb(255, 130, 130);
+  fill: $white;
 }
 
 .form-contact-info__email-wrapper {
@@ -140,8 +139,8 @@
     margin-bottom: 85px;
   }
 
-  .form-contact-info::before{
-    left: 0px;
+  .form-contact-info::before {
+    left: 0;
   }
 
   .form-contact-info__item {
@@ -178,8 +177,8 @@
     position: absolute;
     right: 14px;
     top: 13px;
-    fill: #fff;
-    stroke: #000;
+    fill: $white;
+    stroke: $black;
   }
 }
 

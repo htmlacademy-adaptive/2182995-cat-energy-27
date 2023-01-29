@@ -8,6 +8,7 @@
   width: 320px;
   box-sizing: border-box;
   padding: 0 20px;
+
   @include center;
   margin-top: 49px;
 }
@@ -28,7 +29,6 @@
   margin-top: 40px;
   margin-bottom: 20px;
   font-style: normal;
-
 }
 
 .case__stat {
@@ -50,7 +50,7 @@
 
   .case::after {
     content: "";
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 100%;
     height: 462px;
     position: absolute;
@@ -160,5 +160,4 @@
     top: -92px;
     left: -11px;
   }
-
 }

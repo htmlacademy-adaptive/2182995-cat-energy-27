@@ -18,6 +18,14 @@
   position: static;
 }
 
+.main-nav--closed + .main-nav__list {
+  display: none;
+}
+
+.main-nav--closed {
+  display: contents;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -41,7 +49,7 @@
   right: 0;
 }
 
-.main-navt--opened .main-nav__toggle::before {
+.main-nav--opened .main-nav__toggle::before {
   transform: rotate(45deg);
   box-shadow: none;
 }
@@ -57,10 +65,11 @@
 
 .main-nav__list {
   list-style: none;
+
   @include center;
   padding: 0;
   top: 66px;
-  left: 0px;
+  left: 0;
   z-index: 2;
   position: absolute;
   background-color: $white;

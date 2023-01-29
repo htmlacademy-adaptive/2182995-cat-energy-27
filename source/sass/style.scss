@@ -1,6 +1,6 @@
-@import "./blocks/fonts.scss";
-@import "./blocks/mixins.scss";
-@import "./blocks/variables.scss";
+@import "../sass/fonts.scss";
+@import "../sass/mixins.scss";
+@import "../sass/variables.scss";
 @import "./blocks/button-primary.scss";
 @import "./blocks/button-secondary.scss";
 @import "./blocks/main-header.scss";
@@ -8,7 +8,6 @@
 @import "./blocks/additional-list.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/case.scss";
-@import "./blocks/catalog-gift.scss";
 @import "./blocks/collaboration.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/features.scss";

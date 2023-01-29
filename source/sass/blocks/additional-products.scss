@@ -6,7 +6,7 @@
 }
 
 .additional-products::before {
-  content:"";
+  content: "";
   width: 100%;
   height: 2px;
   background-color: $green;
@@ -87,7 +87,7 @@
 
   .additional-products__wrapper {
     margin: 0 auto;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
   }
 
   .additional-products::before {

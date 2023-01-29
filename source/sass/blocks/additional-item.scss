@@ -10,7 +10,7 @@
   margin-top: 13px;
 }
 
-.additional-item--mass{
+.additional-item--mass {
   grid-column-start: 1;
   margin: 0;
   margin-bottom: 15px;
@@ -26,7 +26,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .additional-item a {
     text-decoration: none;
   }
@@ -85,5 +84,4 @@
     padding-top: 42px;
     text-align: start;
   }
-
 }

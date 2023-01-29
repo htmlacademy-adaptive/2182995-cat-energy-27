@@ -30,7 +30,7 @@
   margin: 0 auto;
   max-width: 77px;
   margin-bottom: -17px;
-  background-color: #EAEAEA;
+  background-color: rgb(234, 234, 234);
 }
 
 .stat__total-name {
@@ -44,6 +44,22 @@
   @include center;
 }
 
+.stat__total-amount {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  padding-top: 4px;
+
+  @include center;
+}
+
+.stat__total-price {
+  padding-left: 47px;
+  padding-top: 3px;
+}
+
 
 @media (min-width: $tablet-width) {
   .stat__total-name {
@@ -52,13 +68,14 @@
     max-width: 174px;
     text-align: end;
     margin: 0;
-    padding-left: 122px;
+    padding-left: 76px;
     padding-top: 13px;
   }
 
   .stat__total-price {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .stat__total-amount {
@@ -68,8 +85,7 @@
     text-align: end;
     margin: 0;
     padding-left: 122px;
-    padding-top: 13px;
-    font-family: "Oswald",sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
     padding-top: 9px;
   }
@@ -124,6 +140,7 @@
     margin-top: 17px;
     flex-direction: row;
     gap: 63px;
+    flex-wrap: wrap;
   }
 
   .stat__total-amount {
