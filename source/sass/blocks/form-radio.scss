@@ -32,7 +32,11 @@
   opacity: 0.3;
 }
 
-.form-radio__control:hover > span {
+.form-radio__control-input:focus + span {
+  outline: 1px solid $green;
+}
+
+.form-radio__control:hover + span {
   border: 1px solid rgb(186, 186, 186);
 }
 
@@ -120,7 +124,7 @@
     width: 568px;
     min-height: 200px;
     padding: 0;
-    border: 1px solid #e7e7e7;
+    border: 1px solid $snowy;
     margin-bottom: 40px;
   }
 

@@ -4,7 +4,7 @@
   min-height: 56px;
   display: flex;
   flex-direction: column-reverse;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $grey-additional;
   border-radius: 4px;
 }
 
@@ -116,7 +116,7 @@
 
 @media (min-width: $desktop-width) {
   .stat__title {
-    background-color: #f2f2f2;
+    background-color: $white-mix;
     font-size: 14px;
     line-height: 14px;
     max-width: 130px;

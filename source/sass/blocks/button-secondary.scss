@@ -26,7 +26,7 @@
 
 
 .button-secondary--grey {
-  background-color: rgb(242, 242, 242);
+  background-color: $white-mix;
   color: $grey-main;
   width: 280px;
   min-height: 40px;
@@ -41,9 +41,9 @@
 }
 
 .button-secondary--grey:hover {
-  background-color: #ebebeb;
+  background-color: $duty-white;
 }
 
 .button-secondary--grey:active {
-  background-color: #ebebeb;
+  background-color: $duty-white;
 }

@@ -50,7 +50,7 @@
 
   .case::after {
     content: "";
-    background-color: #eaeaea;
+    background-color: $white-smoky;
     width: 100%;
     height: 462px;
     position: absolute;
@@ -116,7 +116,7 @@
 
   .case::after {
     height: 462px;
-    background-color: #f2f2f2;
+    background-color: $white-mix;
   }
 
   .case__wrapper {
