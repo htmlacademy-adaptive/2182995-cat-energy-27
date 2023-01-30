@@ -8,7 +8,7 @@
 }
 
 .form-radio__control {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -119,7 +119,6 @@
     grid-row-end: 2;
     width: 568px;
     min-height: 200px;
-    margin-left: 80px;
     padding: 0;
     border: 1px solid #e7e7e7;
     margin-bottom: 40px;

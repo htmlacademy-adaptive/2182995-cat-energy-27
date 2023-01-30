@@ -6,7 +6,7 @@
 }
 
 .copyright__name {
-  font-family: "$lato", sans-serif;
+  font-family: "$lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -59,6 +59,6 @@
 @media (min-width: $desktop-width) {
   .copyright {
     gap: 27px;
-    padding: 11px 0 0 77px;
+    padding: 0 0 0 77px;
   }
 }
