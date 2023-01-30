@@ -42,7 +42,6 @@
   line-height: 18px;
   color: $black;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .form-checkbox__control-label {
@@ -53,12 +52,16 @@
   margin-bottom: 24px;
 }
 
+.form-checkbox__input:focus + span {
+  outline: 1px solid $green;
+}
+
 .form-checkbox__control-mark {
   position: absolute;
   width: 26px;
   height: 26px;
   background: $white;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $grey-additional;
 }
 
 .form-checkbox__label:hover > .form-checkbox__control-mark {
@@ -135,6 +138,6 @@
   }
 
   .form-checkbox__title {
-    margin-top: -27px;
+    margin-top: -32px;
   }
 }

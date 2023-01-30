@@ -1,6 +1,6 @@
 .socials {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: $white-mix;
 }
 
 .socials__wrapper {
@@ -15,22 +15,25 @@
 }
 
 .socials__logo {
-  padding: 0 76px 20px 76px;
-  border-bottom: 1px solid $basic-grey;
-  text-align: center;
   width: 128px;
   height: 24px;
   fill: $black-light;
   display: inline-block;
 }
 
+.socials__link-logo {
+  padding: 0 95px 20px 95px;
+  border-bottom: 1px solid $basic-grey;
+  text-align: center;
+}
+
 .socials__logo:hover,
 .socials__logo:focus {
-  fill: rgb(62, 62, 62);
+  fill: $silvery;
 }
 
 .socials__logo:active {
-  fill: rgb(107, 107, 107);
+  fill: $slate-grey;
 }
 
 .socials__list {
@@ -77,14 +80,14 @@
 
   .socials {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: $white-mix;
   }
 
   .socials__list {
     padding: 0;
     margin: 0;
     padding-top: 10px;
-    padding-right: 27px;
+    padding-left: 100px;
     border-bottom: none;
   }
 
@@ -98,6 +101,11 @@
     width: 28px;
     height: 22px;
   }
+
+  .socials__link-logo {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -106,6 +114,7 @@
     width: 1330px;
     margin: 0 auto;
     box-sizing: border-box;
+    min-height: 169px;
   }
 
   .socials__logo {
@@ -114,6 +123,7 @@
   }
 
   .socials__list {
-    padding: 23px 53px 0 0;
+    padding-left: 91px;
+    padding-top: 5px;
   }
 }

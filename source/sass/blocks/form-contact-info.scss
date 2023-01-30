@@ -50,6 +50,9 @@
 .form-contact-info__icon-tel {
   fill: $white;
   stroke: $black;
+  position: absolute;
+  top: 14px;
+  right: 10px;
 }
 
 .form-contact-info__title {
@@ -190,17 +193,20 @@
     grid-row-end: 3;
   }
 
+  .form-contact-info__label {
+    white-space: nowrap;
+  }
+
   .form-contact-info__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 78px;
     padding-right: 0;
   }
 
   .form-contact-info__input {
-    min-width: 467px;
+    width: 400px;
     min-height: 45px;
     border: 1px solid rgb(231, 231, 231);
     padding: 0;
@@ -221,5 +227,13 @@
 
   .form-contact-info__item {
     width: 100%;
+  }
+
+  .form-contact-info__email-wrapper {
+    width: 456px;
+  }
+
+  .form-contact-info__tel-wrapper {
+    width: 456px;
   }
 }

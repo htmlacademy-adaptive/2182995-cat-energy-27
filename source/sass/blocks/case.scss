@@ -50,7 +50,7 @@
 
   .case::after {
     content: "";
-    background-color: #eaeaea;
+    background-color: $white-smoky;
     width: 100%;
     height: 462px;
     position: absolute;
@@ -107,7 +107,7 @@
 @media (min-width: $desktop-width) {
   .case__example {
     max-width: 436px;
-    margin-top: 53px;
+    margin-top: 80px;
   }
 
   .case {
@@ -115,7 +115,8 @@
   }
 
   .case::after {
-    height: 491px;
+    height: 462px;
+    background-color: $white-mix;
   }
 
   .case__wrapper {
@@ -123,10 +124,10 @@
     box-sizing: border-box;
     padding: 0 55px;
     display: flex;
-    justify-content: space-between;
     position: relative;
-    margin-top: 160px;
+    margin-top: 147px;
     min-height: 462px;
+    gap: 235px;
   }
 
   .case__title {
@@ -136,7 +137,7 @@
     line-height: 60px;
     color: $black;
     position: absolute;
-    top: -160px;
+    top: -134px;
   }
 
   .case__description {
@@ -157,7 +158,7 @@
   .case__slider {
     margin: 0;
     position: absolute;
-    top: -92px;
-    left: -11px;
+    top: -60px;
+    left: -98px;
   }
 }

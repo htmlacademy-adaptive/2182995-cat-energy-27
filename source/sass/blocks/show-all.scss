@@ -64,7 +64,7 @@
 
 @media (min-width: $tablet-width) {
   .show-all-wrapper {
-    top: 136px;
+    top: 65px;
   }
 
   .show-all__title {
@@ -126,7 +126,7 @@
   }
 
   .show-all-wrapper {
-    top: 124px;
+    top: 62px;
     left: -21px;
     width: 245px;
   }
@@ -144,7 +144,7 @@
     width: 245px;
     top: -31px;
     left: 19px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid $white-mix;
   }
 
   .show-all__title::before {

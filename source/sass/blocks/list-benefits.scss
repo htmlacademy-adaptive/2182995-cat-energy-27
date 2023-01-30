@@ -99,7 +99,7 @@
 
 
   .list-benefits__item-description {
-    font-family: $lato, sans-serif;
+    font-family: $lato;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -224,7 +224,7 @@
 @media (min-width: $desktop-width) {
   .list-benefits {
     gap: 0;
-    margin-top: 54px;
+    margin-top: 36px;
   }
 
   .list-benefits__item {
@@ -242,7 +242,7 @@
   }
 
   .list-benefits__item-description {
-    font-family: "Lato", sans-serif;
+    font-family: $lato;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -256,38 +256,38 @@
   }
 
   .list-benefits__item--nature::before {
-    top: 18px;
+    top: 36px;
   }
 
   .list-benefits__item--nature::after {
-    top: 44px;
+    top: 60px;
   }
 
   .list-benefits__item--meal::before {
-    top: 18px;
+    top: 36px;
     left: 0;
   }
 
   .list-benefits__item--meal::after {
-    top: 45px;
+    top: 60px;
     left: 29px;
   }
 
   .list-benefits__item--tool::before {
-    top: 18px;
+    top: 36px;
   }
 
   .list-benefits__item--tool::after {
-    top: 43px;
+    top: 60px;
   }
 
   .list-benefits__item--time::before {
-    top: 18px;
+    top: 36px;
     left: 3px;
   }
 
   .list-benefits__item--time::after {
-    top: 43px;
+    top: 60px;
     left: 31px;
   }
 }
